@@ -1,0 +1,166 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+html {
+    height: 100%;
+    font-size: 100%;
+}
+
+body {
+    min-height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+#wrapper {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.mdl-layout__header  {
+    background-color: #4d1979;
+    height: 130px;
+    width: 100%;
+}
+
+.mdl-layout__content {
+  width: 100%;
+}
+
+.logo {
+    display: block;
+    width: 100px;
+    height: 77px;
+    background-image: url(../images/FRHC%20Logo.jpg);
+    margin-right: 20px;
+}
+
+#company-name {
+    position: absolute;
+    Font-size: 40px;
+    margin-left: 200px;
+    margin-bottom: 20px;
+    bottom: 0;
+    float: right;
+    color: floralwhite;
+}
+
+.mdl-layout__header-row  {
+    bottom: 0px;
+    margin: 30px;
+    padding: 0px;
+}
+
+.mdl-navigation  {
+    margin-left: 20px;
+}
+
+.mdl-navigation__link  {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+a.nav-link {
+  color: ghostwhite;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+a.active {
+    color: orangered !important;
+}
+
+ .container {
+   position: relative;
+}
+
+.welcome-container {
+   height: 40%;
+   margin-right: 8px;
+}
+
+.building-img {
+   height: 40%;
+   margin-left: 8px;
+}
+
+.product-title {
+   align-self: center;
+   margin-top: 20px;
+}
+
+.learn-more {
+   margin-left: 50px;
+   margin-right: 50px;
+   border: darkkhaki solid 3px;
+}
+
+.mdl-card__title-text {
+   font-size: 50px;
+}
+
+img.display-photo {
+   max-height: 100px;
+   max-width: 100px;
+   float: right;
+   margin: 20px;
+}
+
+#profile-info {
+   margin-bottom: 20px;
+}
+
+#firebase-auth-container {
+   height: 500px;
+}
+
+#user-pic {
+   position: relative;
+   display: inline-block;
+   height: 100px;
+   width: 100px;
+   background-size: 100px 100px;
+}
+
+#user-name {
+   position: relative;
+   display: inline-block;
+   font-size: 30px;
+   margin-left: 30px;
+   line-height: 50px;
+   vertical-align: middle;
+}
+
+#profile-info {
+   align-items: center;
+   vertical-align: middle;
+   display: inline-flex;
+   justify-content: center;
+   width: 100%
+}
+
+#profile-buttons {
+   justify-content: flex-end;
+   height: 100px;
+   width: 100%;
+}
+
+#sign-out {
+   margin-right: 10px;
+   background-color: whitesmoke;
+}
+
+#update-profile {
+   margin-right: 10px;
+   background-color: whitesmoke;
+}
+
+#profile-container {
+   background-color: #4d1979;
+   color: floralwhite;
+   padding: 20px;
+   height: 90%;
+}

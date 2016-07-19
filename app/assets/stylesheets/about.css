@@ -1,0 +1,15 @@
+.about-title {
+    align-self: flex-start;
+    margin: 10px;
+}
+
+.about-paragraph {
+    width: 90%;
+}
+
+.about {
+  background-image: url("mechanic_storefront.jpg");
+  background-size: cover;
+  height: 300px;
+  color: aliceblue;
+}
