@@ -1,0 +1,17 @@
+<h2> Sign In </h2>
+  <%= form_for :session, url: sessions_path do |f| %>
+    <div class="form-group mdl-textfield mdl-js-textfield">
+      <%= f.label :email %>
+      <%= f.email_field :email, autofocus: true, class: 'mdl-textfield__input', placeholder: "Enter email" %>
+    </div>
+    <div class="form-group mdl-textfield mdl-js-textfield">
+      <%= f.label :password %>
+      <%= f.password_field :password, class: 'mdl-textfield__input', placeholder: "Enter password" %>
+    </div>
+    <div class="checkbox">
+      <%= f.label :remember_me do %>
+           Remember Me <%= f.check_box :remember_me, :style => "margin-left: 10px;"  %>
+     <% end %>
+   </div>
+     <%= f.submit "Sign in", class: 'mdl-button mdl-js-button mdl-button--raised' %>
+   <% end %>

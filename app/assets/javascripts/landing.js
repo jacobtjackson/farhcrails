@@ -28,7 +28,7 @@ $(document).ready(function() {
     maxwidth: 1200
   });
 
-    $('#login').animatedDialog({
+    $('#login-button').animatedDialog({
         content: "~ .animated-dialog-content"
     });
 
