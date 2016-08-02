@@ -1,0 +1,26 @@
+<h2 class="mdl-card__title-text">Approve Users</h2>
+<table class="mdl-data-table mdl-js-data-table">
+  <thead>
+    <tr>
+      <th class="mdl-data-table__cell--non-numeric">User</th>
+      <th>email</th>
+      <th>Approved</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+    <td><%= @user.name %></td>
+    <td><%= @user.email %></td>
+    <td>
+    <%= form_for @user do |f| %>
+      <%= f.label :approved do %>
+      <%= f.check_box :approved %>Approved
+        <% end %>
+    </td>
+    </tr>
+    <tr>
+    <%= f.submit "Submit" %>
+    <% end %>
+  </tr>
+  </tbody>
+</table>

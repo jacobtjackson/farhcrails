@@ -7,35 +7,35 @@
             </div>
           <div class="mdl-card__supporting-text">
             <div class="sign-up mdl-textfield mdl-js-textfield">
-            <%= form_for user do |f| %>
-              <% if user.errors.any? %>
+            <%= form_for @user do |f| %>
+              <% if @user.errors.any? %>
               <div class="alert alert-danger">
-                <h4><%= pluralize(user.errors.count, "error") %>.</h4>
+                <h4><%= pluralize(@user.errors.count, "error") %>.</h4>
                 <ul>
-                  <% user.errors.full_messages.each do |msg| %>
+                  <% @user.errors.full_messages.each do |msg| %>
                   <li><%= msg %></li>
               <% end %>
                 </ul>
               </div>
               <% end %>
-              <%= form_group_tag(user.errors[:name]) do %>
+              <%= form_group_tag(@user.errors[:name]) do %>
                 <%= f.label :name %>
                 <%= f.text_field :name, autofocus: true, class: 'mdl-textfield__input', placeholder: "Enter name" %>
               <% end %>
-              <%= form_group_tag(user.errors[:email]) do %>
+              <%= form_group_tag(@user.errors[:email]) do %>
                 <%= f.label :email %>
                 <%= f.email_field :email, class: 'mdl-textfield__input', placeholder: "Enter email" %>
               <% end %>
-              <%= form_group_tag(user.errors[:password]) do %>
+              <%= form_group_tag(@user.errors[:password]) do %>
                 <%= f.label :password %>
                 <%= f.password_field :password, class: 'mdl-textfield__input', placeholder: "Enter password" %>
               <% end %>
-              <%= form_group_tag(user.errors[:password_confirmation]) do %>
+              <%= form_group_tag(@user.errors[:password_confirmation]) do %>
                 <%= f.label :password_confirmation %>
                 <%= f.password_field :password_confirmation, class: 'mdl-textfield__input', placeholder: "Enter password confirmation" %>
               <% end %>
               </div>
-                <%= f.submit "Sign in", class: 'sign-in-button mdl-button mdl-js-button mdl-button--raised' %>
+                <%= f.submit "Sign up", class: 'sign-in-button mdl-button mdl-js-button mdl-button--raised' %>
             <% end %>
             </div>
           </div>
@@ -44,5 +44,3 @@
     </div>
   </div>
 </div>
-
-<%= render partial: 'sign_up', user: @user %>

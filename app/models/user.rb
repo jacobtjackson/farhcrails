@@ -10,5 +10,13 @@ class User < ApplicationRecord
              length: { minimum: 3, maximum: 254 }
   has_secure_password
 
+  def self.unapproved
+    where(approved: false).order('id DESC')
+  end
+
+  def self.approved
+    where(approved: true).order('id DESC')
+  end
+
   enum role: [:member, :admin]
 end
