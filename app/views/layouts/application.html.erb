@@ -27,22 +27,26 @@
                     <%= link_to "Our Products", home_products_path, :class => "mdl-navigation__link" %>
                     <%= link_to "Lets Talk", home_contact_path, :class => "mdl-navigation__link" %>
                     <a id="login-button" class="mdl-navigation__link">
-                      <i id="login" class="material-icons" >person</i>
+                        <i id="login" class="material-icons" >person</i>
                     </a>
                     <div class="animated-dialog-content">
-                      <div class="animated-dialog-close">&times;</div>
-                      <div id="firebase-auth-container">
-                        <% if current_user && current_user.approved? %>
-                          <%= current_user.name %> <%= link_to "Sign Out", session_path(current_user), method: :delete, class: 'mdl-button mdl-js-button mdl-button--raised' %>
-                          <%= link_to "Agent Tools", users_path, class: 'mdl-button mdl-js-button mdl-button--raised' %>
-                          <% if current_user.admin? %>
-                          <%= link_to "Control Panel", admin_index_path %>
-                          <% end %>
-                        <% else %>
-                        <%= render partial: 'sessions/sign_in', :locals=>{:session => @session } %>
-                        <% end %>
-                      </div>
+                        <div class="animated-dialog-close">&times;</div>
+                        <div id="firebase-auth-container">
+                          <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+                            <% if current_user && current_user.admin? %>
+                              Signed in as: <strong><%= current_user.name %></strong>
+                              <%= link_to('Control Panel', admin_index_path, class: "mdl-button mdl-js-button mdl-button--raised") %>
+                              <%= link_to('Logout', destroy_user_session_path, :method => :delete, class: "mdl-button mdl-js-button mdl-button--raised") %>
+                            <% elsif current_user %>
+                              Signed in as: <strong><%= current_user.name %></strong>
+                              <%= link_to('Logout', destroy_user_session_path, :method => :delete, class: "mdl-button mdl-js-button mdl-button--raised") %>
+                            <% else %>
+                            <%= render partial: "devise/sessions/sign_in" %>
+                            <% end %>
+
+                          </div>
                     </div>
+                  </div>
                 </nav>
             </div>
         </header>
