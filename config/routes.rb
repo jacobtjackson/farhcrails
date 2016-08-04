@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
   devise_for :users
+  resources :admin
+
+  put 'approve_admin', to: "admin#approve", as: :approve_admin
+
+  put 'unapprove_admin', to: "admin#unapprove", as: :unapprove_admin
+  
   get 'home/index'
 
   get 'home/about'

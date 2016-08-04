@@ -1,0 +1,59 @@
+<div class="mdl-layout__content">
+  <div id="wrapper">
+    <div class="mdl-grid">
+      <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
+        <div class="mdl-card__title">
+          <h2 class="mdl-card__title-text">Administrator Control Panel</h2>
+        </div>
+        <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--6-col">
+          <h3 class="mdl-card__title">Unapproved Users</h2>
+          <table class="mdl-data-table mdl-js-data-table">
+            <thead>
+              <tr>
+                <th class="mdl-data-table__cell--non-numeric">Select</th>
+                <th>Name</th>
+                <th>Email</th>
+              </tr>
+            </thead>
+            <tbody>
+              <%= form_tag(approve_admin_path, method: :put) do %>
+                <% for user in @unapproved_users %>
+                <tr>
+                  <td class="mdl-data-table__cell--non-numeric"><%= check_box_tag "user_id[]", user.id %></td>
+                  <td><%= user.name %></td>
+                  <td><%= user.email %></td>
+                </tr>
+                <% end %>
+            </tbody>
+          </table>
+                  <%= submit_tag "Mark as approved", class: 'mdl-button mdl-js-button mdl-button--raised approve' %>
+              <% end %>
+            <br/>
+            <br/>
+
+            <h3 class="mdl-card__title">Approved Users</h3>
+            <table class="mdl-data-table mdl-js-data-table">
+              <thead>
+                <tr>
+                  <th class="mdl-data-table__cell--non-numeric">Select</th>
+                  <th>Name</th>
+                  <th>Email</th>
+                </tr>
+              </thead>
+              <tbody>
+                <%= form_tag(unapprove_admin_path, method: :put) do %>
+                  <% for user in @approved_users %>
+                  <tr>
+                    <td class="mdl-data-table__cell--non-numeric"><%= check_box_tag "user_id[]", user.id, false %></td>
+                    <td><%= user.name %></td>
+                    <td><%= user.email %></td>
+                  </tr>
+                  <% end %>
+              </tbody>
+            </table>
+                    <%= submit_tag "Mark as unapproved", class: 'mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect approve' %>
+                <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
