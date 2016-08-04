@@ -28,25 +28,25 @@
                     <%= link_to "Lets Talk", home_contact_path, :class => "mdl-navigation__link" %>
                     <a id="login-button" class="mdl-navigation__link">
                         <i id="login" class="material-icons" >person</i>
-                        <div id="sign-in-status"></div>
-                        <div class="animated-dialog-content">
-                            <div class="animated-dialog-close">&times;</div>
-                            <div id="firebase-auth-container">
-                                <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-desktop">
-                                    <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-                                        <p>Enter an email and password below and either sign in to an existing account or sign up</p>
-                                        <input class="mdl-textfield__input" style="display:inline;width:auto;" type="text" id="email" name="email" placeholder="Email"/>&nbsp;&nbsp;&nbsp;
-                                        <input class="mdl-textfield__input" style="display:inline;width:auto;" type="password" id="password" name="password" placeholder="Password"/><br/><br/>
-                                        <button class="mdl-button mdl-js-button mdl-button--raised" id="sign-in" name="signin">Sign In</button>&nbsp;&nbsp;&nbsp;
-                                        <button class="mdl-button mdl-js-button mdl-button--raised" id="sign-out" name="signout">Sign Out</button>&nbsp;&nbsp;&nbsp;
-                                        <button class="mdl-button mdl-js-button mdl-button--raised" id="sign-up" name="signup">Sign Up</button>&nbsp;&nbsp;&nbsp;
-                                        <button class="mdl-button mdl-js-button mdl-button--raised" disabled id="verify-email" name="verify-email">Send Email Verification</button>&nbsp;&nbsp;&nbsp;
-                                        <button class="mdl-button mdl-js-button mdl-button--raised" id="password-reset" name="verify-email">Send Password Reset Email</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </a>
+                    <div class="animated-dialog-content">
+                        <div class="animated-dialog-close">&times;</div>
+                        <div id="firebase-auth-container">
+                          <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+                            <% if current_user && current_user.admin? %>
+                              Signed in as: <strong><%= current_user.email %></strong>
+                              <%= link_to('Control Panel', )
+                              <%= link_to('Logout', destroy_user_session_path, :method => :delete, class: "mdl-button mdl-js-button mdl-button--raised") %>
+                            <% elsif current_user %>
+                              Signed in as: <strong><%= current_user.email %></strong>
+                              <%= link_to('Logout', destroy_user_session_path, :method => :delete, class: "mdl-button mdl-js-button mdl-button--raised") %>
+                            <% else %>
+                            <%= render partial: "devise/sessions/sign_in" %>
+                            <% end %>
+
+                          </div>
+                    </div>
+                  </div>
                 </nav>
             </div>
         </header>
