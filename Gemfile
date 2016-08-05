@@ -50,3 +50,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'material_design_lite-rails'
 
 gem 'devise'
+
+gem 'whenever', :require => false
