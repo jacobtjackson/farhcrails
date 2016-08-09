@@ -52,3 +52,5 @@ gem 'material_design_lite-rails'
 gem 'devise'
 
 gem 'whenever', :require => false
+
+gem 'carrierwave'

@@ -26,11 +26,10 @@
                 <% end %>
             </tbody>
           </table>
-                  <%= submit_tag "Mark as approved", class: 'mdl-button mdl-js-button mdl-button--raised approve' %>
+              <%= submit_tag "Mark as approved", class: 'mdl-button mdl-js-button mdl-button--raised approve' %>
               <% end %>
-            <br/>
-            <br/>
-
+          </div>
+          <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--6-col">
             <h3 class="mdl-card__title">Approved Users</h3>
             <table class="mdl-data-table mdl-js-data-table">
               <thead>
@@ -51,8 +50,15 @@
                   <% end %>
               </tbody>
             </table>
-                    <%= submit_tag "Mark as unapproved", class: 'mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect approve' %>
+                  <%= submit_tag "Mark as unapproved", class: 'mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect approve' %>
                 <% end %>
+        </div>
+        <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--6-col">
+          <h3 class="mdl-card__title">Newsletters</h3>
+          <%= @newsletters.each do |n| %>
+            <%= link_to n.name,  n %>
+            <% end %>
+          <%= link_to "New Newsletter", new_newsletter_path %>
         </div>
       </div>
     </div>

@@ -1,0 +1,25 @@
+<div class="mdl-layout__content">
+  <div id="wrapper">
+    <div class="mdl-grid">
+      <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
+        <div class="mdl-card__title">
+          <h3 class="mdl-card_title-text">Newsletter Uploader</h3>
+        </div>
+        <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--6-col">
+            <%= render partial:  "newsletters/form.html.erb" %>
+            <%= form_for @newsletter, :html => {multipart: true} do |f| %>
+              <div>
+                <%= f.label :name %><br />
+                <%= f.text_field :name %>
+              </div>
+              <div>
+                <%= f.label :newsletter %>
+                <%= f.file_field :newsletter %>
+              </div>
+              <div><%= f.submit %></div>
+            <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -8,6 +8,7 @@ class AdminController < ApplicationController
     end
     @unapproved_users = User.unapproved
     @approved_users = User.approved
+    @newsletters = Newsletter.all
   end
 
   def show

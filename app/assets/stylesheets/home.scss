@@ -27,13 +27,14 @@ body {
 
 .mdl-layout__content {
   width: 100%;
+  background-image: image-url("stockyardsblur.jpg");
 }
 
 .logo {
     display: block;
     width: 100px;
     height: 77px;
-    background-image: url(../images/FRHC%20Logo.jpg);
+    background-image: image-url("FRHC_LOGO.png");
     margin-right: 20px;
 }
 
@@ -163,4 +164,8 @@ img.display-photo {
    color: floralwhite;
    padding: 20px;
    height: 90%;
+}
+
+ul.rslides {
+  max-height: 450px
 }
