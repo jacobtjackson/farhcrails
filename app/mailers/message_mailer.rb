@@ -1,5 +1,4 @@
 class MessageMailer < ActionMailer::Base
-  default from: 'postmaster@sandbox364a4748caff4ebbbe8def7ba8b485ea.mailgun.org'
   default to: 'jacob.t.jackson@gmail.com'
 
   def welcome_email(user)
@@ -10,6 +9,13 @@ class MessageMailer < ActionMailer::Base
 
   def new_message(message)
     @message = message
-    mail subject: "Message from #{message.name}"
+    @email = message.email
+    mail(from: @email, to: 'jacob.t.jackson@gmail.com', subject: "Message from #{message.name}")
   end
+
+  def auto_response(message)
+    @message = message
+    @email = message.email
+    mail(from: 'jacob.t.jackson@gmail.com', to: @email, subject: "Thank you for your response to Farm & Ranch Insurance Services!")
+  end 
 end
