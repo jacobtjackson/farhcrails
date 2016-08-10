@@ -9,6 +9,7 @@ class HomeController < ApplicationController
   end
 
   def agents
+    @message = Message.new
   end
 
   def contact

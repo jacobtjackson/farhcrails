@@ -7,6 +7,10 @@ Rails.application.routes.draw do
 
   put 'unapprove_admin', to: "admin#unapprove", as: :unapprove_admin
 
+  get 'contact', to: 'messages#new', as: 'contact'
+
+  post 'contact', to: 'messages#create'
+
   get 'home/index'
 
   get 'home/about'

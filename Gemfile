@@ -54,3 +54,7 @@ gem 'devise'
 gem 'whenever', :require => false
 
 gem 'carrierwave'
+
+gem 'mail_form'
+
+gem 'figaro'
