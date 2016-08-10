@@ -13,6 +13,3 @@ module Farhc
     # -- all .rb files in that directory are automatically loaded.
   end
 end
-
-
-config.action_mailer.asset_host = 'http://localhost:3000'
