@@ -1,5 +1,5 @@
 .products {
-   background: url('images/flower_shop.jpg');
+   background: image-url('flower_shop.jpg');
     background-size: cover;
     height: 400px;
     color: aliceblue;
