@@ -14,10 +14,6 @@ class MessageMailer < ActionMailer::Base
   end
 
   def auto_response(message)
-    attachments.inline['twitter.png'] = File.read("#{Rails.root.join('assets', 'twitter.png')}")
-    attachments.inline['linkedin.png'] = File.read("#{Rails.root.join('assets', 'linkedin.png')}")
-    attachments.inline['facebook.png'] = File.read("#{Rails.root.join('assets', 'facebook.png')}")
-    attachments.inline['youtube.png'] = File.read("#{Rails.root.join('assets', 'youtube.png')}")
     @message = message
     @email = message.email
     mail(from: 'jacob.t.jackson@gmail.com', to: @email, subject: "Thank you for your response to Farm & Ranch Insurance Services!")
