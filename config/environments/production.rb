@@ -86,4 +86,5 @@ Rails.application.configure do
   config.action_mailer.default_url_options = { host: 'hidden-hamlet-38592.herokuapp.com' }
   config.action_mailer.asset_host = 'hidden-hamlet-38592.herokuapp.com'
   config.assets.digest = true
+  config.action_controller.asset_host = 'hidden-hamlet-38592.herokuapp.com'
 end
