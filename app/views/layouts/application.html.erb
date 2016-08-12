@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Farm & Ranch Insurance, Inc</title>
+    <title><%= yield(:title) %></title>
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag 'application', 'https://fonts.googleapis.com/css?family=Roboto:400,700' %>
     <%= stylesheet_link_tag 'application', 'https://fonts.googleapis.com/icon?family=Material+Icons' %>
@@ -13,12 +13,13 @@
   </head>
 
   <body>
+    <% title "Your custom title" %>
     <div class="mdl-layout__container">
       <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
         <header class="mdl-layout__header">
             <div class="mdl-layout__header-row">
                 <div class="logo"><%= image_tag('FRHC_Logo.jpg') %></div>
-                <span class="mdl-layout-title">Farm & Ranch Insurance, Inc.</span>
+                <span class="mdl-layout-title">Farm & Ranch Insurance Services, Inc.</span>
                 <div class="mdl-layout-spacer"></div>
                 <nav class="mdl-navigation" style="margin-left: 120px">
                     <%= link_to "Home", home_index_path, :class => "mdl-navigation__link" %>
@@ -26,8 +27,7 @@
                     <%= link_to "Join Our Team", home_agents_path, :class => "mdl-navigation__link" %>
                     <%= link_to "Our Products", home_products_path, :class => "mdl-navigation__link" %>
                     <%= link_to "Lets Talk", home_contact_path, :class => "mdl-navigation__link" %>
-                    <a id="login-button" class="mdl-navigation__link">
-                        <i id="login" class="material-icons" >person</i>
+                    <a id="login-button" class="mdl-navigation__link">Agent Login
                     </a>
                     <div class="animated-dialog-content">
                         <div class="animated-dialog-close">&times;</div>

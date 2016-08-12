@@ -1,16 +1,17 @@
+<% title "Let's Talk" %>
 <div class="mdl-layout__content">
                     <div id="wrapper">
                         <div class="mdl-grid">
                             <div class="talk mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col mdl-grid">
                                 <div class="mdl-card__title">
-                                    <h2>Lets Talk</h2>
+                                    <h3>Lets Talk</h3>
                                 </div>
                                 <div class="mdl-card__supporting-text">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu tincidunt lectus. Mauris fermentum sollicitudin libero ut mollis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla facilisi. Pellentesque ac nisl at sem finibus euismod.
                                 </div>
                                 <div class="mdl-cell mdl-cell--6-col">
                                     <div class="title mdl-card__title">
-                                        <h2>Social Media</h2>
+                                        <h3>Social Media</h3>
                                     </div>
                                     <div class="social-media-container">
                                         <%= image_tag("facebook.png", class: "social-icon") %>
@@ -18,40 +19,22 @@
                                         <%= image_tag("linkedin.png", class: "social-icon") %>
                                     </div>
                                     <div class="title contact-info mdl-card__title">
-                                        <h2>Contact Info</h2>
+                                        <h3>Contact Info</h3>
                                     </div>
                                     <div class="contact-container">
-                                        <p>Farm & Ranch Healthcare, Inc</p>
-                                        <p>2901 Riverglen Drive</p>
-                                        <p>Fort Worth, TX 76109</p>
-                                        <p>(800)633-6508 - Office</p>
-                                        <p>(817)244-4473 - Fax</p>
+                                        Farm & Ranch Healthcare, Inc<br />
+                                        2901 Riverglen Drive<br />
+                                        Fort Worth, TX 76109<br />
+                                        (800)633-6508 - Office<br />
+                                        (817)244-4473 - Fax<br />
                                     </div>
                                 </div>
                                 <div class="mdl-cell mdl-cell--6-col">
                                     <div class="contact-form">
                                         <div class="mdl-card__title">
-                                            <h2>Contact Us</h2>
+                                            <h3>Contact Us</h3>
                                         </div>
-                                        <form>
-                                            <input type="text" name="name" placeholder="Name" />
-                                            <br/>
-                                            <input type="text" name="email" placeholder="Email" />
-                                            <br/>
-                                            <input type="text" name="phone" placeholder="Phone"/>
-                                            <br/>
-                                            <select name="Insurance" size="5" multiple>
-                                                <option value="Short Term Medical">Short Term Medical</option>
-                                                <option value="Medicare Supp">Medicare Supplemental Insurance Policy</option>
-                                                <option value="Life Insurance">Life Insurance</option>
-                                                <option value="Accident">Accident Insurance Policy</option>
-                                                <option value="Final Expenses">Life Insurance - Final Expenses Coverage</option>
-                                            </select>
-                                            <br/>
-                                            <textarea name="message" placeholder="Type your message here"></textarea>
-                                            <br/>
-                                            <input type="submit" name="send" value="Submit" />
-                                        </form>
+                                          <%= render partial: 'message_mailer/new'%>
                                     </div>
                                 </div>
                                 <div class="mdl-cell mdl-cell--12-col">

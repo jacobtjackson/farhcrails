@@ -1,21 +1,21 @@
 <%= form_for @message, url: contact_path do |message_form| %>
    <fieldset>
-     <div class="field">
-       <%= message_form.text_field :name, placeholder: "Name" %>
+     <div class="mdl-textfield__input">
+       <%= message_form.text_field :name, placeholder: "Name", :class => "mdl-textfield__input" %>
      </div>
 
      <div class="field">
-       <%= message_form.email_field :email, placeholder: "Email"%>
+       <%= message_form.email_field :email, placeholder: "Email", :class => "mdl-textfield__input" %>
      </div>
 
      <div class="field">
-       <%= message_form.text_area :content, placeholder: "Message"%>
+       <%= message_form.text_area :content, placeholder: "Message", class: 'mdl-textfield__input' %>
      </div>
    </fieldset>
 
    <fieldset>
      <div class="field">
-       <%= message_form.submit "Send" %>
+       <%= message_form.submit "Send", class: 'mdl-button mdl-js-button mdl-button--raised' %>
      </div>
    </fieldset>
  <% end %>
