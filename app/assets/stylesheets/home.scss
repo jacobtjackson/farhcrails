@@ -12,6 +12,44 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.pre-header {
+  box-sizing: border-box;
+  background-color: #4d1979;
+  height: 100px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: white;
+  position: static;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  margin-top: 30px;
+}
+.contact-info {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.contact-icon {
+  position: relative;
+  margin-left: 30px;
+}
+
+.material-icons {
+  font-size: 40px;
+}
+
+.contact-text {
+  margin-left: 10px;
+}
+
 #wrapper {
     max-width: 1200px;
     width: 90%;
@@ -19,9 +57,13 @@ body {
     height: 100%;
 }
 
+.page-grid {
+  background-color: #ccd0d1;
+}
+
 .mdl-layout__header  {
     background-color: #4d1979;
-    height: 130px;
+    height: 30px;
     width: 100%;
 }
 
@@ -40,7 +82,7 @@ body {
 
 #company-name {
     position: absolute;
-    Font-size: 40px;
+    font-size: 40px;
     margin-left: 200px;
     margin-bottom: 20px;
     bottom: 0;
@@ -50,8 +92,10 @@ body {
 
 .mdl-layout__header-row  {
     bottom: 0px;
-    margin: 30px;
     padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .mdl-navigation  {
@@ -168,4 +212,105 @@ img.display-photo {
 
 ul.rslides {
   max-height: 450px
+}
+
+.slide1 {
+  background-image: image_url("customer-service3.jpg");
+  height: 450px;
+  margin: 0;
+  padding: 10px;
+}
+
+.slide-title {
+  height: 25%;
+}
+
+.title {
+  color: ghostwhite;
+  margin-top: 100px;
+}
+
+.slide-button {
+  background: #ececec;
+  width: 150px;
+  margin: 15px;
+}
+
+div.affiliates {
+  position: fixed;
+  top: 100;
+  left: 10;
+  width: 40px;
+  margin-left: 10px
+}
+
+.companies {
+  margin-top: 30px;
+}
+
+.more-info {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 10
+}
+
+#info-button {
+  background: #4d1979;
+  color: ghostwhite;
+  width: 150px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 150px;
+  margin-left: 50px;
+}
+
+.carriers {
+  background-image: image-url("fairbault_main_street.jpg");
+  background-size: cover;
+  height: 300px;
+  color: aliceblue;
+}
+
+$color-black: "0,0,0";
+$select-background-color: transparent;
+$select-border-color: unquote("rgba(#{$color-black}, 0.12)") !default;
+$select-font-size: 16px;
+$select-color: unquote("rgba(#{$color-black}, 0.50)") !default;
+
+select {
+  font-family: inherit;
+  background-color: transparent;
+  width: 100%;
+  font-size: $select-font-size;
+  color: $select-color;
+  border: none;
+  border-bottom: 1px solid $select-border-color;
+}
+
+/* Remove focus */
+select:focus {
+  outline: none
+}
+
+.mdl-selectfield select {appearance: none}
+
+.state {
+  &:after {
+       position: absolute;
+       top: 0.75em;
+       right: 0.5em;
+       /* Styling the down arrow */
+       width: 0;
+       height: 0;
+       padding: 0;
+       content: '';
+       border-left: .25em solid transparent;
+       border-right: .25em solid transparent;
+       border-top: .375em solid $select-border-color;
+       pointer-events: none;
+   }
 }

@@ -15,6 +15,8 @@ Rails.application.routes.draw do
 
   get 'home/about'
 
+  get 'home/carriers'
+
   get 'home/products'
 
   get 'home/agents'

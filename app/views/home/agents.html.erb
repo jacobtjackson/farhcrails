@@ -1,52 +1,44 @@
 <% title "Join Our Team" %>
-<div class="mdl-layout__content">
-                    <div id="wrapper">
-                        <div class="mdl-grid">
-                            <div class=" mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
-                                <div class="agents mdl-card__title">
-                                    <h2 class="mdl-card__title-text">Join Our Team</h2>
-                                </div>
-                                <h3 class="mdl-card__title">About Our Agents</h2>
-                                <div class="mdl-card__supporting-text">
-                                  Paragraph about our agents and the types of people we're looking to attract to our business.
-                                </div>
-                                <h3 class="mdl-card__title">Opportunities</h2>
-                                <div class="mdl-card__supporting-text">
-                                  Paragraph about the benefits of working with Farm & Ranch and what we have to offer for potential agents.
-                                </div>
-                                <h3 class="mdl-card__title">States Covered</h3>
-                                <div class="mdl-card__supporting-text">
+<div class="page-grid mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+    <div class="agents mdl-card__title">
+        <h2 class="mdl-card__title-text">Join Our Team</h2>
+    </div>
+    <h3 class="mdl-card__title">About Our Agents</h2>
+    <div class="mdl-card__supporting-text">
+      Paragraph about our agents and the types of people we're looking to attract to our business.
+    </div>
+    <h3 class="mdl-card__title">Opportunities</h2>
+    <div class="mdl-card__supporting-text">
+      Paragraph about the benefits of working with Farm & Ranch and what we have to offer for potential agents.
+    </div>
+    <h3 class="mdl-card__title">States Covered</h3>
+    <div class="mdl-card__supporting-text">
 
-                                </div>
-                                <div class="mdl-grid">
-                                    <div class="mdl-cell mdl-cell--6-col">
-                                        <button id="oppo" class="button mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" type="button">Join Our Team</button>
-                                        <div class="animated-dialog-content">
-                                            <div class="animated-dialog-header">
-                                                <div class="animated-dialog-title">Send us an Email</div>
-                                                <div class="animated-dialog-close">&times;</div>
-                                            </div>
-                                            <div>
-                                              <%= render partial: 'message_mailer/new'%>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="mdl-cell mdl-cell--6-col">
-                                        <button id="active-states"class="button mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">States Available</button>
-                                        <div class="animated-dialog-content">
-                                            <div class="animated-dialog-header">
-                                                <div class="animated-dialog-title">States We Work In</div>
-                                                <div class="animated-dialog-close">&times;</div>
-                                                <div class="map">
-                                                    Picture of the map goes here
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+    </div>
+    <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--6-col">
+            <button id="oppo" class="button mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" type="button">Join Our Team</button>
+            <div class="animated-dialog-content">
+                <div class="animated-dialog-header">
+                    <div class="animated-dialog-title">Send us an Email</div>
+                    <div class="animated-dialog-close">&times;</div>
+                </div>
+                <div>
+                  <%= render partial: 'message_mailer/new'%>
+                </div>
+            </div>
+        </div>
+        <div class="mdl-cell mdl-cell--6-col">
+            <button id="active-states"class="button mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">States Available</button>
+            <div class="animated-dialog-content">
+                <div class="animated-dialog-header">
+                    <div class="animated-dialog-title">States We Work In</div>
+                    <div class="animated-dialog-close">&times;</div>
+                    <div class="map">
+                        Picture of the map goes here
                     </div>
                 </div>
             </div>
-          </div>
+        </div>
+    </div>
+</div>

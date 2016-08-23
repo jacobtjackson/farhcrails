@@ -10,22 +10,49 @@
     <%= stylesheet_link_tag 'application', 'https://code.getmdl.io/1.1.3/material.indigo-pink.min.css' %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'https://code.getmdl.io/1.1.3/material.min.js' %>
+    <%= favicon_link_tag 'favicon (1).ico' %>
   </head>
 
   <body>
-    <% title "Your custom title" %>
+    <div class="pre-header">
+      <div class="logo"><%= image_tag('FRHC_Logo.jpg') %></div>
+      <div class="page-title">
+        <span>Farm & Ranch Insurance Services, Inc.</span>
+      </div>
+      <div class="contact-info">
+        <div class="contact-icon">
+          <i class="material-icons md-light">call</i>
+        </div>
+        <div class="contact-text">
+          <span>(800)633-6508 - Office</span><br />
+          <span>(817)244-4473 - Fax</span>
+        </div>
+        <div class="contact-icon">
+          <i class="material-icons md-light">place</i>
+        </div>
+        <div class="contact-text">
+          <span>2901 Riverglen Drive</span><br />
+          <span>Fort Worth, TX 76109</span><br />
+        </div>
+        <div class="contact-icon">
+          <i class="material-icons md-light">schedule</i>
+        </div>
+        <div class="contact-text">
+          <span>8:30 AM - 5:00 PM</span><br />
+          <span>Monday - Thursday</span><br />
+        </div>
+      </div>
+    </div>
     <div class="mdl-layout__container">
       <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
         <header class="mdl-layout__header">
             <div class="mdl-layout__header-row">
-                <div class="logo"><%= image_tag('FRHC_Logo.jpg') %></div>
-                <span class="mdl-layout-title">Farm & Ranch Insurance Services, Inc.</span>
-                <div class="mdl-layout-spacer"></div>
-                <nav class="mdl-navigation" style="margin-left: 120px">
+                <nav class="mdl-navigation">
                     <%= link_to "Home", home_index_path, :class => "mdl-navigation__link" %>
                     <%= link_to "Who We Are", home_about_path, :class => "mdl-navigation__link" %>
                     <%= link_to "Join Our Team", home_agents_path, :class => "mdl-navigation__link" %>
-                    <%= link_to "Our Products", home_products_path, :class => "mdl-navigation__link" %>
+                    <%= link_to "Our Services", home_products_path, :class => "mdl-navigation__link" %>
+                    <%= link_to "Preferred Carriers", home_carriers_path, :class => "mdl-navigation__link" %>
                     <%= link_to "Lets Talk", home_contact_path, :class => "mdl-navigation__link" %>
                     <a id="login-button" class="mdl-navigation__link">Agent Login
                     </a>
@@ -50,6 +77,21 @@
                 </nav>
             </div>
         </header>
+        <div class="mdl-layout__content">
+          <div class="more-info">
+            <button id="info-button" class="button mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" type="button">More Info</button>
+            <div class="animated-dialog-content">
+                <div class="animated-dialog-header">
+                    <div class="animated-dialog-title">Send us an Email</div>
+                    <div class="animated-dialog-close">&times;</div>
+                </div>
+                <div>
+                  <%= render partial: 'message_mailer/new'%>
+                </div>
+            </div>
+          </div>
+          <div id="wrapper">
+            <div class="mdl-grid">
     <%= yield %>
   </body>
 </html>

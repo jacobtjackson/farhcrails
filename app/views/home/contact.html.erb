@@ -1,50 +1,45 @@
 <% title "Let's Talk" %>
-<div class="mdl-layout__content">
-                    <div id="wrapper">
-                        <div class="mdl-grid">
-                            <div class="talk mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col mdl-grid">
-                                <div class="mdl-card__title">
-                                    <h3>Lets Talk</h3>
-                                </div>
-                                <div class="mdl-card__supporting-text">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu tincidunt lectus. Mauris fermentum sollicitudin libero ut mollis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla facilisi. Pellentesque ac nisl at sem finibus euismod.
-                                </div>
-                                <div class="mdl-cell mdl-cell--6-col">
-                                    <div class="title mdl-card__title">
-                                        <h3>Social Media</h3>
-                                    </div>
-                                    <div class="social-media-container">
-                                        <%= image_tag("facebook.png", class: "social-icon") %>
-                                        <%= image_tag("twitter.png", class: "social-icon") %>
-                                        <%= image_tag("linkedin.png", class: "social-icon") %>
-                                    </div>
-                                    <div class="title contact-info mdl-card__title">
-                                        <h3>Contact Info</h3>
-                                    </div>
-                                    <div class="contact-container">
-                                        Farm & Ranch Healthcare, Inc<br />
-                                        2901 Riverglen Drive<br />
-                                        Fort Worth, TX 76109<br />
-                                        (800)633-6508 - Office<br />
-                                        (817)244-4473 - Fax<br />
-                                    </div>
-                                </div>
-                                <div class="mdl-cell mdl-cell--6-col">
-                                    <div class="contact-form">
-                                        <div class="mdl-card__title">
-                                            <h3>Contact Us</h3>
-                                        </div>
-                                          <%= render partial: 'message_mailer/new'%>
-                                    </div>
-                                </div>
-                                <div class="mdl-cell mdl-cell--12-col">
-                                    <div class="map">
-                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3357.0877843575927!2d-97.39137868512286!3d32.71029498099219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e0ce19c442cdf%3A0xb56ec790c8d3f6e7!2sFarm+%26+Ranch+Healthcare%2C+Inc!5e0!3m2!1sen!2sus!4v1466617928810" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-             </div>
-           </div>
+<div class="page-grid mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+    <div class="talk mdl-card__title">
+        <h3>Lets Talk</h3>
+    </div>
+    <div class="mdl-card__supporting-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu tincidunt lectus. Mauris fermentum sollicitudin libero ut mollis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla facilisi. Pellentesque ac nisl at sem finibus euismod.
+    </div>
+    <div class="mdl-grid">
+      <div class="mdl-cell mdl-cell--6-col">
+          <div class="mdl-card__title">
+              <h3>Social Media</h3>
+          </div>
+          <div class="social-media-container">
+              <a href="https://www.facebook.com/Farm-and-Ranch-Insurance-Services-831930163604057/"><%= image_tag("facebook.png", class: "social-icon") %></a>
+              <a href="https://twitter.com/farmnranch"><%= image_tag("twitter.png", class: "social-icon") %></a>
+              <a href="https://www.linkedin.com/company/farm-and-ranch-health-care"><%= image_tag("linkedin.png", class: "social-icon") %></a>
+              <a href="https://www.youtube.com/channel/UCwh8qO04VnJBcaVTu3msH7g"><%= image_tag("youtube.png") %></a>
+          </div>
+          <div class="contact-info mdl-card__title">
+              <h3>Contact Info</h3>
+          </div>
+          <div class="contact-container">
+              Farm & Ranch Healthcare, Inc<br />
+              2901 Riverglen Drive<br />
+              Fort Worth, TX 76109<br />
+              (800)633-6508 - Office<br />
+              (817)244-4473 - Fax<br />
+          </div>
+      </div>
+      <div class="mdl-cell mdl-cell--6-col">
+          <div class="contact-form">
+              <div class="mdl-card__title">
+                  <h3>Contact Us</h3>
+              </div>
+                <%= render partial: 'message_mailer/new'%>
+          </div>
+      </div>
+      <div class="mdl-cell mdl-cell--8-col">
+          <div class="map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3357.0877843575927!2d-97.39137868512286!3d32.71029498099219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e0ce19c442cdf%3A0xb56ec790c8d3f6e7!2sFarm+%26+Ranch+Healthcare%2C+Inc!5e0!3m2!1sen!2sus!4v1466617928810" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+      </div>
+    </div>
+</div>

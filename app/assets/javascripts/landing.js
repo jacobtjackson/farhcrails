@@ -32,5 +32,12 @@ $(document).ready(function() {
         content: "~ .animated-dialog-content"
     });
 
+    $('#info-button').animatedDialog({
+      "content": "~ .animated-dialog-content",
+      "width": 300,
+      "height": 500,
+      "background": "rgb(236, 236, 236)",
+      "tween": "centerExpand"
+    });
 
 });
