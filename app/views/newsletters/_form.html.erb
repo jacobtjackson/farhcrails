@@ -1,10 +1,10 @@
-<%= form_for @newsletter, :html => {multipart: true} do |f| %>
-  <p>
+<%= form_for @newsletter, html: {multipart: true} do |f| %>
+  <div>
     <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </p>
-  <p>
+    <%= f.text_field :name, :class => "mdl-textfield__input" %>
+  </div>
+  <div>
     <%= f.file_field :newsletter %>
-  </p>
-  <p><%= f.submit %></p>
+  </div>
+  <div><%= f.submit %></div>
 <% end %>

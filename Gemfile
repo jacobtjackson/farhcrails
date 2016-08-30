@@ -10,7 +10,7 @@ end
 group :production do
    gem 'pg'
  end
- 
+
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
@@ -60,6 +60,8 @@ gem 'devise'
 gem 'whenever', :require => false
 
 gem 'carrierwave'
+
+gem 'mini_magick', '~> 4.3'
 
 gem 'mail_form'
 

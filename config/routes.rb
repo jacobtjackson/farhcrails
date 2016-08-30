@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   devise_for :users
   resources :admin
   resources :newsletters
+  resources :t_materials
 
   put 'approve_admin', to: "admin#approve", as: :approve_admin
 

@@ -10,6 +10,7 @@ class AdminController < ApplicationController
     @approved_users = User.approved
     @newsletters = Newsletter.all
     @message = Message.new
+    @trainings = TMaterial.all
   end
 
   def show

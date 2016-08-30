@@ -314,3 +314,69 @@ select:focus {
        pointer-events: none;
    }
 }
+
+.training {
+  position: relative;
+  max-height: 500px;
+  max-width: 1200px;
+}
+
+.description-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  margin-bottom: 12px;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.admin-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.small-button {
+  width: 200px;
+}
+
+.table-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.list-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.building-img {
+  background-image: image-url("Home_Base31.jpg");
+  background-repeat: no-repeat;
+  height: 290px;
+}

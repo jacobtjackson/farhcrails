@@ -1,0 +1,21 @@
+<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
+        <div class="mdl-card__title">
+          <h2 class="mdl-card__title-text">Edit Newsletters</h2>
+        </div>
+        <table class="mdl-data-table mdl-js-data-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+            </tr>
+          </thead>
+          <tbody>
+            <%= form_tag(approve_admin_path, method: :put) do %>
+              <% for user in @unapproved_users %>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric"><%= check_box_tag "user_id[]", user.id %></td>
+                <td><%= user.name %></td>
+                <td><%= user.email %></td>
+              </tr>
+              <% end %>
+          </tbody>
+        </table>
