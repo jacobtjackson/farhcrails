@@ -2,6 +2,30 @@
         <div class="mdl-card__title">
           <h2 class="mdl-card__title-text">Administrator Control Panel</h2>
         </div>
+        <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+          <div class="mdl-card__title">
+            <h2 class="mdl-card__title-text">Newsfeed</h2>
+          </div>
+          <div class="newsfeed-messages">
+            <% @newsfeeds.each do |f| %>
+              <div class="blurb mdl-grid" id="newsfeed-<%= f.id %>">
+                <div class="timestamp mdl-cell mdl-cell--3-col">
+                  <%= f.timestamp %>
+                </div>
+                <div class="blurb-message mdl-cell mdl-cell--8-col">
+                  <%= f.message %>
+                </div>
+                <div class="mdl-cell mdl-cell--1-col">
+                  <%= link_to "Delete", f, method: :delete, remote: true %>
+                </div>
+              </div>
+            <% end %>
+          </div>
+            <div class="new-message">
+              <%= render partial: 'newsfeeds/form', locals: { newsfeed: @newsfeed } %>
+            </div>
+          </div>
+        </div>
         <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--6-col">
           <h3 class="mdl-card__title">Unapproved Users</h3>
           <div class="table-container">

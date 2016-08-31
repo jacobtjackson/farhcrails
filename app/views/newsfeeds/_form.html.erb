@@ -1,0 +1,9 @@
+<%= form_for newsfeed, remote: true do |f| %>
+  <div class="message-container">
+    <%= f.label :message %><br />
+    <%= f.text_field :message, :class => "mdl-textfield__input" %>
+  </div>
+  <div class="submit-button">
+    <%= f.submit %>
+  </div>
+<% end %>

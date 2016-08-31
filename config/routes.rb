@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
-  devise_for :users
+  devise_for :users, except: [:index]
   resources :admin
   resources :newsletters
   resources :t_materials
+  resources :newsfeeds
 
   put 'approve_admin', to: "admin#approve", as: :approve_admin
 
@@ -23,6 +24,8 @@ Rails.application.routes.draw do
   get 'home/agents'
 
   get 'home/contact'
+
+  get 'users/index'
 
   root 'home#index'
 

@@ -11,6 +11,8 @@ class AdminController < ApplicationController
     @newsletters = Newsletter.all
     @message = Message.new
     @trainings = TMaterial.all
+    @newsfeeds = Newsfeed.all
+    @newsfeed = Newsfeed.new
   end
 
   def show

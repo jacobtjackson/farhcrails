@@ -1,3 +1,20 @@
 // Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.newsfeed-messages {
+  height: 300px;
+  overflow-y: scroll;
+}
+
+.blurb {
+  border: 1px black solid;
+  margin-top: 5px;
+}
+
+.training-description {
+  margin-left: 20px;
+}
+
+.newsletter-item {
+  justify-content: space-between;
+}

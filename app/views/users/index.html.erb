@@ -2,16 +2,48 @@
   <div class="mdl-card__title">
     <h2 class="mdl-card__title-text">Agent Information</h2>
   </div>
+  <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col">
+    <div class="mdl-card__title">
+      <h2 class="mdl-card__title-text">Announcements</h2>
+    </div>
+    <div class="newsfeed-messages">
+      <% @newsfeeds.each do |f| %>
+        <div class="blurb mdl-grid">
+          <div class="timestamp mdl-cell mdl-cell--3-col">
+            <%= f.timestamp %>
+          </div>
+          <div class="blurb-message mdl-cell mdl-cell--9-col">
+            <%= f.message %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
   <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--6-col">
     <div class="mdl-card__title">
       <h3 class="mdl-card__title-text">Training Materials</h3>
     </div>
     <div class="training-container">
       <ul class="mdl-list">
-        
+        <% @trainings.each do |n| %>
+          <li class="mdl-list__item">
+            <%= link_to n.name, n %>
+            <span class="training-description"><%= n.body %></span>
+          </li>
+        <% end %>
+      </ul>
     </div>
-    </div>
-
   </div>
-
+  <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--6-col">
+    <div class="mdl-card__title">
+      <h3 class="mdl-card__title-text">Newsletters</h3>
+    </div>
+    <div class="newsletter-container">
+      <ul class="mdl-list">
+        <% @newsletters.each do |n| %>
+          <li class="newsletter-item mdl-list__item"><%= n.timestamp %><%= link_to n.name, n %></li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
 </div>

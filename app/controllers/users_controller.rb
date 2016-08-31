@@ -2,7 +2,9 @@ class UsersController < ApplicationController
   def index
     @user = User.find_by(params[:id])
     @message = Message.new
-    @newsletters = Newsletters.all
+    @newsletters = Newsletter.all
+    @newsfeeds = Newsfeed.all
+    @trainings = TMaterial.all
   end
 
   def show

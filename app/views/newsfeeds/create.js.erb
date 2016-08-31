@@ -1,0 +1,7 @@
+<% if @newsfeed.valid? %>
+  $('.newsfeed-messages').prepend("<%= j render(@newsfeed) %>");
+  $('.new-message').html("<%= j render partial: 'newsfeeds/form', locals: { newsfeed: @new_newsfeed } %>");
+<% else %>
+  $('.flash').prepend("<div class='alert alert-danger'><button type='button' class='close' data-dismiss='alert'>^&times;</button><%= flash.now[:alert] %></div>");
+  $('.new-message').html("<%= escape_javascript(render partial: 'newsfeeds/form') %>");
+<% end %>

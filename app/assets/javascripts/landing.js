@@ -39,5 +39,4 @@ $(document).ready(function() {
       "background": "rgb(236, 236, 236)",
       "tween": "centerExpand"
     });
-
 });

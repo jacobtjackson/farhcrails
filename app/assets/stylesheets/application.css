@@ -21,4 +21,6 @@
  *= require agents
  *= require contact
  *= require products
+ *= require admin
+ *= require users
  */
