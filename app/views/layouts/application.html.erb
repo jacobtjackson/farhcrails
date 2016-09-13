@@ -62,12 +62,12 @@
                           <div class="mdl-card__supporting-text mdl-color-text--grey-600">
                             <% if current_user && current_user.admin? %>
                               Signed in as: <strong><%= current_user.name %></strong>
-                              <%= link_to('Control Panel', admin_index_path, class: "mdl-button mdl-js-button mdl-button--raised") %>
-                              <%= link_to('Logout', destroy_user_session_path, :method => :delete, class: "mdl-button mdl-js-button mdl-button--raised") %>
+                              <%= link_to('Control Panel', admin_index_path, class: "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect") %>
+                              <%= link_to('Logout', destroy_user_session_path, :method => :delete, class: "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect") %>
                             <% elsif current_user %>
                               Signed in as: <strong><%= current_user.name %></strong>
-                              <%= link_to('Agent Information', users_index_path, class: "button mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect") %>
-                              <%= link_to('Logout', destroy_user_session_path, :method => :delete, class: "button mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect") %>
+                              <%= link_to('Agent Information', users_index_path, class: "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect") %>
+                              <%= link_to('Logout', destroy_user_session_path, :method => :delete, class: "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect") %>
                             <% else %>
                             <%= render partial: "devise/sessions/sign_in" %>
                             <% end %>
