@@ -16,6 +16,6 @@ class MessageMailer < ActionMailer::Base
   def auto_response(message)
     @message = message
     @email = message.email
-    mail(from: 'jacob.t.jackson@gmail.com', to: @email, subject: "Thank you for your response to Farm & Ranch Insurance Services!")
+    mail(from: 'jacob.t.jackson@gmail.com', to: @email, subject: "Thank you for your response to Farm & Ranch Healthcare, Inc.!")
   end
 end
