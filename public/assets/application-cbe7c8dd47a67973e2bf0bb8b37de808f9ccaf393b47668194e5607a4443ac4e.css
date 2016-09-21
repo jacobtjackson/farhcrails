@@ -1,0 +1,1349 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+
+
+
+
+
+
+
+
+
+
+
+ */
+
+/* line 1, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/contact.scss */
+h2 {
+  color: aliceblue;
+}
+
+/* line 5, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/contact.scss */
+input[type=text], select, textarea {
+  display: flex;
+  -webskit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 75%;
+}
+
+/* line 13, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/contact.scss */
+textarea {
+  height: 200px;
+}
+
+/* line 17, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/contact.scss */
+p {
+  font-size: 20px;
+  font-weight: 600;
+  color: aliceblue;
+}
+
+/* line 22, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/contact.scss */
+.mdl-card__supporting-text {
+  color: black;
+}
+
+/* line 26, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/contact.scss */
+.talk {
+  background: url(/assets/womantalking-2fc723fd0bb7ac6885efbc46631349e705235c56278feb04dc9b0e7787d569d5.jpg);
+  background-size: cover;
+  height: 300px;
+  color: aliceblue;
+  font-size: 50px;
+}
+
+/* line 34, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/contact.scss */
+.title {
+  margin-left: 30px;
+}
+
+/* line 38, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/contact.scss */
+.contact {
+  width: 90%;
+}
+
+/* line 42, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/contact.scss */
+.social-media-container {
+  margin-left: 30px;
+}
+
+/* line 46, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/contact.scss */
+.social-icon {
+  margin-left: 20px;
+  max-height: 100px;
+}
+
+/* line 51, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/contact.scss */
+.contact-container {
+  margin-left: 46px;
+}
+
+/* line 55, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/contact.scss */
+.map {
+  max-height: 400px;
+  max-width: 500px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  align-self: center;
+}
+
+/* line 63, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/contact.scss */
+.contact-form {
+  float: right;
+  height: 100%;
+  width: 100%;
+  margin-right: 20px;
+}
+/* line 5, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+html {
+  height: 100%;
+  font-size: 100%;
+}
+
+/* line 10, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+body {
+  min-height: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* line 15, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+.pre-header {
+  box-sizing: border-box;
+  background-color: #4d1979;
+  height: 100px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: white;
+  position: static;
+}
+
+/* line 27, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+.page-title {
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  margin-top: 30px;
+}
+
+/* line 33, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+.contact-info {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* line 40, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+.contact-icon {
+  position: relative;
+  margin-left: 30px;
+}
+
+/* line 45, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+.material-icons {
+  font-size: 40px;
+}
+
+/* line 49, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+.contact-text {
+  margin-left: 10px;
+}
+
+/* line 53, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+#wrapper {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+/* line 60, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+.page-grid {
+  background-color: #fff8f0;
+}
+
+/* line 64, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+.mdl-layout__header {
+  background-color: #4d1979;
+  height: 30px;
+  width: 100%;
+}
+
+/* line 70, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+.mdl-layout__content {
+  width: 100%;
+  background-image: url(/assets/stockyardsblur-c6cdf82ea77383abb73d5a9f60bcbf9a7b1e91341d8db280ab9ce5c3121796f5.jpg);
+}
+
+/* line 75, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+.logo {
+  display: block;
+  width: 100px;
+  height: 77px;
+  background-image: url(/images/images/FRHC_LOGO.png);
+  margin-right: 20px;
+}
+
+/* line 83, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+#company-name {
+  position: absolute;
+  font-size: 40px;
+  margin-left: 200px;
+  margin-bottom: 20px;
+  bottom: 0;
+  float: right;
+  color: floralwhite;
+}
+
+/* line 93, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+.mdl-layout__header-row {
+  bottom: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* line 101, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+.mdl-navigation {
+  margin-left: 20px;
+}
+
+/* line 105, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+.mdl-navigation__link {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* line 110, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+a.nav-link {
+  color: ghostwhite;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* line 117, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+a.active {
+  color: orangered !important;
+}
+
+/* line 121, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+.container {
+  position: relative;
+}
+
+/* line 125, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+.welcome-container {
+  height: 290px;
+  margin-right: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 132, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+.product-title {
+  align-self: center;
+  margin-top: 20px;
+  font-size: 30px !important;
+}
+
+/* line 138, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+.learn-more {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+/* line 143, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+.mdl-card__title-text {
+  font-size: 50px;
+}
+
+/* line 147, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+img.display-photo {
+  max-height: 100px;
+  max-width: 100px;
+  float: right;
+  margin: 20px;
+}
+
+/* line 154, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+#profile-info {
+  margin-bottom: 20px;
+}
+
+/* line 158, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+#firebase-auth-container {
+  height: 500px;
+}
+
+/* line 162, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+#user-pic {
+  position: relative;
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  background-size: 100px 100px;
+}
+
+/* line 170, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+#user-name {
+  position: relative;
+  display: inline-block;
+  font-size: 30px;
+  margin-left: 30px;
+  line-height: 50px;
+  vertical-align: middle;
+}
+
+/* line 179, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+#profile-info {
+  align-items: center;
+  vertical-align: middle;
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* line 187, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+#profile-buttons {
+  justify-content: flex-end;
+  height: 100px;
+  width: 100%;
+}
+
+/* line 193, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+#sign-out {
+  margin-right: 10px;
+  background-color: whitesmoke;
+}
+
+/* line 198, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+#update-profile {
+  margin-right: 10px;
+  background-color: whitesmoke;
+}
+
+/* line 203, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+#profile-container {
+  background-color: #4d1979;
+  color: floralwhite;
+  padding: 20px;
+  height: 90%;
+}
+
+/* line 210, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+ul.rslides {
+  max-height: 450px;
+}
+
+/* line 214, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+#slide1 {
+  background-image: url(/assets/customer-service3-c1deae23a2940d0ef46f7ae4a1a56f9cf7160cd25c1621db73af99007b8c2828.jpg);
+  height: 450px;
+  margin: 0;
+  padding: 10px;
+}
+
+/* line 221, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+#slide2 {
+  background-image: url(/assets/skyline-a3623a8892b86676e2d2af8988e46f4aa088753f2a1ad93135ec2ca87b641b30.jpg);
+  height: 450px;
+  margin: 0;
+  padding: 10px;
+}
+
+/* line 228, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+#container2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  float: right;
+}
+
+/* line 235, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+.slide-title {
+  height: 25%;
+}
+
+/* line 239, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+.slide-description {
+  height: 25%;
+  color: ghostwhite;
+  margin-left: 30px;
+  font-size: 20px;
+}
+
+/* line 245, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+#title1 {
+  color: ghostwhite;
+  margin-top: 60px;
+  margin-left: 30px;
+}
+
+/* line 251, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+#title2 {
+  color: ghostwhite;
+  margin-top: 60px;
+  float: right;
+  margin-right: 30px;
+}
+
+/* line 258, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+#description2 {
+  float: right;
+  margin-right: 30px;
+  color: ghostwhite;
+  font-size: 20px;
+}
+
+/* line 265, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+.slide-button {
+  background: #ececec;
+  width: 150px;
+  margin: 15px;
+}
+
+/* line 271, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+div.affiliates {
+  position: fixed;
+  top: 100;
+  left: 10;
+  width: 40px;
+  margin-left: 10px;
+}
+
+/* line 279, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+.companies {
+  margin-top: 30px;
+  justify-content: center;
+}
+
+/* line 284, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+.more-info {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 10;
+}
+
+/* line 291, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+#info-button {
+  background: #4d1979;
+  color: ghostwhite;
+  width: 200px;
+  height: 40px;
+}
+
+/* line 298, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+#button-container1 {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 150px;
+  margin-left: 50px;
+}
+
+/* line 305, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+#button-container2 {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 75px;
+  margin-right: 10px;
+}
+
+/* line 312, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+.carriers {
+  background-image: url(/assets/fairbault_main_street-5c7944ad2d5532d9a586ef126caf1d9af889245b79b2317e798762b5997e2e99.jpg);
+  background-size: cover;
+  height: 300px;
+  color: aliceblue;
+}
+
+/* line 325, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+select {
+  font-family: inherit;
+  background-color: transparent;
+  width: 100%;
+  font-size: 16px;
+  color: rgba(0,0,0, 0.50);
+  border: none;
+  border-bottom: 1px solid rgba(0,0,0, 0.12);
+}
+
+/* Remove focus */
+/* line 336, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+select:focus {
+  outline: none;
+}
+
+/* line 340, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+.mdl-selectfield select {
+  appearance: none;
+}
+
+/* line 343, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+.state:after {
+  position: absolute;
+  top: 0.75em;
+  right: 0.5em;
+  /* Styling the down arrow */
+  width: 0;
+  height: 0;
+  padding: 0;
+  content: '';
+  border-left: .25em solid transparent;
+  border-right: .25em solid transparent;
+  border-top: 0.375em solid rgba(0,0,0, 0.12);
+  pointer-events: none;
+}
+
+/* line 359, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+.training {
+  position: relative;
+  max-height: 500px;
+  max-width: 1200px;
+}
+
+/* line 365, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+.description-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+/* line 373, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  margin-bottom: 12px;
+}
+
+/* line 384, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 393, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+.admin-buttons {
+  display: flex;
+  align-items: center;
+}
+
+/* line 398, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+.small-button {
+  width: 200px;
+}
+
+/* line 402, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+.table-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* line 410, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+.list-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+/* line 419, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+.building-img {
+  background-image: url(/assets/Home_Base31-aaabde002c34257aafefe1c72345f511e72f582e5e8e0813dd08178be4d4f924.jpg);
+  background-repeat: no-repeat;
+  height: 290px;
+}
+
+/* line 425, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+.product-picture {
+  padding-top: 20%;
+}
+
+/* line 429, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/home.scss */
+.associations {
+  background: url(/assets/skyline-a3623a8892b86676e2d2af8988e46f4aa088753f2a1ad93135ec2ca87b641b30.jpg);
+  background-size: cover;
+  height: 300px;
+  color: ghostwhite;
+  padding-bottom: 10px;
+}
+/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
+ */
+
+
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ * 2. Add the correct display in IE.
+ */
+
+article,
+aside,
+details, /* 1 */
+figcaption,
+figure,
+footer,
+header,
+main, /* 2 */
+menu,
+nav,
+section,
+summary { /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Add the correct display in IE 10-.
+ * 1. Add the correct display in IE.
+ */
+
+template, /* 1 */
+[hidden] {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+
+a {
+  background-color: transparent; /* 1 */
+  -webkit-text-decoration-skip: objects; /* 2 */
+}
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change font properties to `inherit` in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+select,
+textarea {
+  font: inherit; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Restore the font weight unset by the previous rule.
+ */
+
+optgroup {
+  font-weight: bold;
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+html [type="button"], /* 1 */
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
+ */
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Correct the text style of placeholders in Chrome, Edge, and Safari.
+ */
+
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+/*! http://responsiveslides.com v1.54 by @viljamis */
+
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
+
+.rslides1_nav {
+  position: absolute;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  top: 50%;
+  left: 0;
+  z-index: 99;
+  opacity: 0.7;
+  text-indent: -9999px;
+  overflow: hidden;
+  text-decoration: none;
+  height: 61px;
+  width: 38px;
+  background: transparent url("navbuttons.gif") no-repeat left top;
+  margin-top: -45px;
+  }
+
+.rslides1_nav:active {
+  opacity: 1.0;
+  }
+
+.rslides1_nav.next {
+  left: auto;
+  background-position: right top;
+  right: 0;
+  }
+
+.rslides1_nav:focus {
+  outline: none;
+  }
+
+.rslides_tabs {
+  margin-top: 10px;
+  text-align: center;
+  }
+
+.rslides_tabs li {
+  display: inline;
+  float: none;
+  _float: left;
+  *float: left;
+  margin-right: 5px;
+  }
+
+.rslides_tabs a {
+  text-indent: -9999px;
+  overflow: hidden;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  background: #ccc;
+  background: rgba(0,0,0, .2);
+  display: inline-block;
+  _display: block;
+  *display: block;
+  -webkit-box-shadow: inset 0 0 2px 0 rgba(0,0,0,.3);
+  -moz-box-shadow: inset 0 0 2px 0 rgba(0,0,0,.3);
+  box-shadow: inset 0 0 2px 0 rgba(0,0,0,.3);
+  width: 9px;
+  height: 9px;
+  }
+
+.rslides_tabs .rslides_here a {
+  background: #222;
+  background: rgba(0,0,0, .8);
+  }
+/** AnimateDialog.js | 1.0.0 | http://www.georgelee.me/project/animateddialogjs */
+@CHARSET "UTF-8";.animated-dialog-wrap{position:fixed;top:0;left:0;width:100%;height:100%;z-index:9999;-webkit-transition:background-color 2s;-moz-transition:background-color 2s;-o-transition:background-color 2s;transition:background-color 2s;background-color:rgba(255,255,255,0);display:none;overflow:auto;}.animated-dialog-wrap.show{display:block;}.animated-dialog-wrap.frosted{background-color:rgba(255,255,255,0.5);}.animated-dialog{position:absolute;width:100%;height:100%;border:1px solid #CCC;}.animated-dialog.moving{-webkit-transition:left .5s,top .5s,max-width .5s,max-height .5s,background-color .5s;-moz-transition:left .5s,top .5s,max-width .5s,max-height .5s,background-color .5s;-o-transition:left .5s,top .5s,max-width .5s,max-height .5s,background-color .5s;transition:left .5s,top .5s,max-width .5s,max-height .5s,background-color .5s;}.animated-dialog-content{display:block!important;width:100%;height:100%;opacity:1;-webkit-transition:opacity .2s;-moz-transition:opacity .2s;-o-transition:opacity .2s;transition:opacity .2s;}.animated-dialog-content.hide{opacity:0;}.animated-dialog-hidden{visibility:hidden;}.animated-dialog-header{display:block;width:95%;font-size:30px;color:#333;float:left;}.animated-dialog-content>div{padding:15px;}.animated-dialog-header .animated-dialog-title{float:left;}.animated-dialog-header .animated-dialog-close{color:#999;float:right;cursor:pointer;}.animated-dialog-header .animated-dialog-close:hover{color:#333;}.animated-dialog-body{float:left;width:100%;}
+/* line 1, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/about.scss */
+.about-title {
+  align-self: flex-start;
+  margin: 10px;
+}
+
+/* line 6, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/about.scss */
+.about-paragraph {
+  width: 90%;
+}
+
+/* line 10, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/about.scss */
+.about {
+  background: url(/assets/Cowboys-988764ce17de523adeca46f80f1e3cf57cfa462005d3cde315de61104815cb48.jpg);
+  background-size: cover;
+  height: 300px;
+  color: aliceblue;
+}
+
+/* line 17, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/about.scss */
+.about-pic {
+  background-image: url("wildcatter.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+}
+/* line 1, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/agents.scss */
+.agents {
+  background-image: url(/assets/small_business-d3420ee5c0119952c3ec5a9b67ae85cea085c995b957dbe3315b001ef75d5d7b.png);
+  background-size: cover;
+  height: 300px;
+  color: aliceblue;
+}
+
+/* line 8, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/agents.scss */
+#modal input {
+  margin: .5em;
+  padding: 1em;
+  color: #555;
+  border: 0;
+  outline: 0;
+}
+
+/* line 16, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/agents.scss */
+#modal {
+  border: 0;
+  outline: 0;
+  font-size: 1em;
+  background: #ececec;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  padding: 2em;
+  color: white;
+  width: 15em;
+  height: 20em;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 2px;
+  font-family: inherit;
+}
+
+/* line 33, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/agents.scss */
+.button:hover {
+  cursor: pointer;
+}
+
+/* line 37, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/agents.scss */
+#modal {
+  position: absolute;
+  text-align: center;
+  display: block;
+  left: 50%;
+  top: 50%;
+  display: none;
+  transition: width, height 0.15s ease;
+}
+
+/* line 47, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/agents.scss */
+#modal.revealed {
+  position: absolute;
+  text-align: center;
+  display: block;
+  width: 20em;
+  height: 27em;
+  box-sizing: border-box;
+  color: white;
+  z-index: 5;
+}
+
+/* line 58, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/agents.scss */
+#modal-content {
+  display: none;
+  margin-top: 2em;
+}
+
+/* line 63, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/agents.scss */
+#close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: transparent;
+  border: 0;
+  color: #555;
+  padding: 1em;
+  cursor: pointer;
+}
+
+/* line 74, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/agents.scss */
+div.morphContainer {
+  position: absolute;
+  left: 10%;
+  top: 500px;
+  margin-left: 100px;
+  width: 200px;
+  height: 70px;
+  background-color: #ececec;
+  z-index: 9;
+}
+
+/* line 85, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/agents.scss */
+div.active {
+  z-index: 30;
+}
+
+/* line 89, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/agents.scss */
+h1, p {
+  display: none;
+  margin: 50px;
+}
+
+/* line 94, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/agents.scss */
+h1 {
+  color: white;
+}
+
+/* line 98, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/agents.scss */
+p {
+  color: white;
+  line-height: 25px;
+  font-size: 18px;
+  margin-top: 0;
+}
+
+/* line 105, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/agents.scss */
+div.overlay {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.0;
+  z-index: -1;
+}
+
+/* line 117, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/agents.scss */
+button#oppo {
+  width: 200px;
+}
+
+/* line 121, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/agents.scss */
+button#active-states {
+  width: 200px;
+}
+
+/* line 125, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/agents.scss */
+.agents-pic {
+  position: absolute;
+  right: 50px;
+  top: 710px;
+}
+/* line 1, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/products.scss */
+.products {
+  background: url(/assets/flower_shop-7f892202938c5b4d561370c22cb9207b285b0ad2eefd7cf5ad52612cb59f7adf.jpg);
+  background-size: cover;
+  height: 300px;
+  color: aliceblue;
+  font-size: 50px;
+}
+
+/* line 9, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/products.scss */
+.button {
+  width: 50%;
+  align-self: center;
+  margin-bottom: 16px;
+}
+
+/* line 15, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/products.scss */
+.product-picture {
+  padding-top: 20%;
+}
+/* line 4, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/admin.scss */
+.newsfeed-messages {
+  height: 300px;
+  overflow-y: scroll;
+}
+
+/* line 9, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/admin.scss */
+.blurb {
+  border: 1px black solid;
+  margin-top: 5px;
+}
+/* line 4, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/users.scss */
+.newsfeed-messages {
+  height: 300px;
+  overflow-y: scroll;
+}
+
+/* line 9, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/users.scss */
+.blurb {
+  border: 1px black solid;
+  margin-top: 5px;
+}
+
+/* line 14, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/users.scss */
+.training-description {
+  margin-left: 20px;
+}
+
+/* line 18, /Users/jacobjackson/bloc/farhc/app/assets/stylesheets/users.scss */
+.newsletter-item {
+  justify-content: space-between;
+}

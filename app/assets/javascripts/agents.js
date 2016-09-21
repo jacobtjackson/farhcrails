@@ -16,8 +16,8 @@ $(document).ready(function() {
 
     $("#active-states").animatedDialog({
         "content": "~ .animated-dialog-content",
-        "width": 800,
-        "height": 400,
+        "width": 600,
+        "height": 500,
         "background": "rgb(236, 236, 236)",
         "tween": "centerExpand"
     });

@@ -15,29 +15,31 @@
       industry.
     </div>
     <h3 class="mdl-card__title">Opportunities</h2>
-    <div class="mdl-card__supporting-text">
-      Our New Agent Orientation training and Home Office Support Staff will
-      assist you in reaching your career goals as expeditiously as possible.
-      Your partnership with us offers you:
-      <ul class="mdl-list">
-        <li class="mdl-list__item">Quality Health and Life Insurance products and services</li>
-        <li class="mdl-list__item">Advance Commission Programs</li>
-        <li class="mdl-list__item">Production Awards & Recognition</li>
-        <li class="mdl-list__item">Classroom & Field Training</li>
-        <li class="mdl-list__item">A Proven Sales System</li>
-        <li class="mdl-list__item">Home Office Support Staff</li>
-      </ul>
-      <div class="agents-pic">
-        <%= image_tag "mountains.jpg" %>
-      </div><br />
-      Do not delay! Our agents have the potential to make $1,000.00 in one day!
-      <br /><br /><br />
-      For more information regarding this tremendous career opportunity, contact
-      Marty Hilgendorf, National Marketing Director (800-633-6508 ext. 110) or
-      send us an email by clicking on "Join Our Team" below!
-    </div>
-    <div class="agents-pic">
-      <%= image_tag "mountains.jpg" %>
+    <div class="mdl-grid">
+      <div class="mdl-cell mdl-cell--12-col">
+        Our New Agent Orientation training and Home Office Support Staff will
+        assist you in reaching your career goals as expeditiously as possible.
+        Your partnership with us offers you:
+      </div>
+      <div class="mdl-cell mdl-cell--6-col">
+        <ul class="mdl-list">
+          <li class="mdl-list__item">Quality Health and Life Insurance products and services</li>
+          <li class="mdl-list__item">Advance Commission Programs</li>
+          <li class="mdl-list__item">Production Awards & Recognition</li>
+          <li class="mdl-list__item">Classroom & Field Training</li>
+          <li class="mdl-list__item">A Proven Sales System</li>
+          <li class="mdl-list__item">Home Office Support Staff</li>
+        </ul>
+        Do not delay! Our agents have the potential to make $1,000.00 in one day!
+      </div>
+      <div class="agents-pic mdl-cell mdl-cell--6-col">
+          <%= image_tag "mountains.jpg" %>
+      </div>
+      <div class="mdl-cell mdl-cell--12-col">
+        For more information regarding this tremendous career opportunity, contact
+        Marty Hilgendorf, National Marketing Director (800-633-6508 ext. 110) or
+        send us an email by clicking on "Join Our Team" below!
+      </div>
     </div>
     <div class="mdl-grid">
         <div class="mdl-cell mdl-cell--6-col">
@@ -58,8 +60,9 @@
                 <div class="animated-dialog-header">
                     <div class="animated-dialog-title">States We Work In</div>
                     <div class="animated-dialog-close">&times;</div>
+                </div>
                     <div class="map">
-                        Picture of the map goes here
+                        <%= image_tag "states_covered.gif" %>
                     </div>
                 </div>
             </div>
