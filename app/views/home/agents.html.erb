@@ -42,7 +42,7 @@
       </div>
     </div>
     <div class="mdl-grid">
-        <div class="mdl-cell mdl-cell--6-col">
+        <div class="mdl-cell mdl-cell--4-col">
             <button id="oppo" class="agents-button mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" type="button">Join Our Team</button>
             <div class="animated-dialog-content">
                 <div class="animated-dialog-header">
@@ -54,7 +54,7 @@
                 </div>
             </div>
         </div>
-        <div class="mdl-cell mdl-cell--6-col">
+        <div class="mdl-cell mdl-cell--4-col">
             <button id="active-states"class="agents-button mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">States Available</button>
             <div class="animated-dialog-content">
                 <div class="animated-dialog-header">
@@ -65,6 +65,9 @@
                         <%= image_tag "states_covered.gif" %>
                     </div>
                 </div>
+            </div>
+            <div class="mdl-cell mdl-cell--4-col">
+              <%= link_to "Download Paperwork", asset_path('FullContractPack.pdf'), :target => "_blank", class: "agents-button mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" %>
             </div>
         </div>
     </div>
