@@ -83,8 +83,8 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
-  config.action_mailer.default_url_options = { host: 'farhc.com' }
-  config.action_mailer.asset_host = 'farhc.com'
+  config.action_mailer.default_url_options = { host: 'hidden-hamlet-38592.herokuapp.com' }
+  config.action_mailer.asset_host = 'hidden-hamlet-38592.herokuapp.com'
   config.assets.digest = true
-  config.action_controller.asset_host = 'farhc.com'
+  config.action_controller.asset_host = 'hidden-hamlet-38592.herokuapp.com'
 end
