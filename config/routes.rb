@@ -21,7 +21,9 @@ Rails.application.routes.draw do
 
   get 'home/associations'
 
-  get 'home/products'
+  get 'home/life'
+
+  get 'home/medical'
 
   get 'home/agents'
 
