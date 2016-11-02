@@ -449,3 +449,24 @@ select:focus {
 ul.product-list li {
   font-size: 20px;
 }
+
+.product-container {
+  min-height: 100px;
+}
+
+.product-container h4 {
+  margin: auto;
+}
+
+.animated-dialog-header {
+  margin-bottom: 20px;
+}
+
+.product-table {
+  width: 100%;
+  tr td {
+    width: 50%;
+    padding: 20px 0 20px;
+    border-bottom: 2px solid black;
+  }
+}

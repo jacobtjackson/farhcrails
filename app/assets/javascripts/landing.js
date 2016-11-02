@@ -25,4 +25,12 @@ $(document).ready(function() {
       "background": "rgb(236, 236, 236)",
       "tween": "centerExpand"
     });
+
+    $('.product-modal').animatedDialog({
+      "content": "~ .animated-dialog-content",
+      "width": 600,
+      "height": 375,
+      "background": "rgb(236, 236, 236)",
+      "tween": "centerExpand"
+    })
 });
