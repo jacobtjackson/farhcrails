@@ -8,7 +8,7 @@
 $(document).ready(function() {
     $("#oppo").animatedDialog({
         "content": "~ .animated-dialog-content",
-        "width": 300,
+        "width": 400,
         "height": 500,
         "background": "rgb(236, 236, 236)",
         "tween": "centerExpand"

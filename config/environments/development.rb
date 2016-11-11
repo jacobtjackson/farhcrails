@@ -53,6 +53,6 @@ Rails.application.configure do
 
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
   config.action_mailer.asset_host = "http://localhost:3000"
-  ENV_RECAPTCHA_PUBLIC_KEY = '6Ld6igsUAAAAAFPNr98RMiaIkqP-NRnsmrkcnt4o'
-  ENV_RECAPTCHA_PRIVATE_KEY = '6Ld6igsUAAAAAI9K_VCpNMFCPTK_OK4Zkp08W5-Q'
+  RECAPTCHA_PUBLIC_KEY = '6Ld6igsUAAAAAFPNr98RMiaIkqP-NRnsmrkcnt4o'
+  RECAPTCHA_PRIVATE_KEY = '6Ld6igsUAAAAAI9K_VCpNMFCPTK_OK4Zkp08W5-Q'
 end
