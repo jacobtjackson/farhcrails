@@ -1,5 +1,5 @@
 class MessageMailer < ActionMailer::Base
-  default to: 'jacob.t.jackson@gmail.com'
+  default to: 'moreinfo@farhc.com'
 
   def welcome_email(user)
     @user = user
@@ -10,12 +10,12 @@ class MessageMailer < ActionMailer::Base
   def new_message(message)
     @message = message
     @email = message.email
-    mail(from: @email, to: 'jacob.t.jackson@gmail.com', subject: "Message from #{message.name}")
+    mail(from: @email, to: 'moreinfo@farhc.com', subject: "Message from #{message.name}")
   end
 
   def auto_response(message)
     @message = message
     @email = message.email
-    mail(from: 'jacob.t.jackson@gmail.com', to: @email, subject: "Thank you for your response to Farm & Ranch Healthcare, Inc.!")
+    mail(from: 'moreinfo@farhc.com', to: @email, subject: "Thank you for your response to Farm & Ranch Healthcare, Inc.!")
   end
 end
