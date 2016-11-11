@@ -69,3 +69,5 @@ gem 'mini_magick', '~> 4.3'
 gem 'mail_form'
 
 gem 'figaro'
+
+gem 'recaptcha', '~> 3.4', require: "recaptcha/rails"

@@ -44,7 +44,7 @@ Rails.application.configure do
 
   # Suppress logger output for asset requests.
   config.assets.quiet = true
-  
+
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
 
@@ -53,4 +53,6 @@ Rails.application.configure do
 
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
   config.action_mailer.asset_host = "http://localhost:3000"
+  ENV_RECAPTCHA_PUBLIC_KEY = '6Ld6igsUAAAAAFPNr98RMiaIkqP-NRnsmrkcnt4o'
+  ENV_RECAPTCHA_PRIVATE_KEY = '6Ld6igsUAAAAAI9K_VCpNMFCPTK_OK4Zkp08W5-Q'
 end

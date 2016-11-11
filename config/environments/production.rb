@@ -87,4 +87,6 @@ Rails.application.configure do
   config.action_mailer.asset_host = 'hidden-hamlet-38592.herokuapp.com'
   config.assets.digest = true
   config.action_controller.asset_host = 'hidden-hamlet-38592.herokuapp.com'
+  ENV_RECAPTCHA_PUBLIC_KEY = '6Ld6igsUAAAAAFPNr98RMiaIkqP-NRnsmrkcnt4o'
+  ENV_RECAPTCHA_PRIVATE_KEY = '6Ld6igsUAAAAAI9K_VCpNMFCPTK_OK4Zkp08W5-Q'
 end
