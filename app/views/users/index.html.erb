@@ -1,3 +1,4 @@
+<% if current_user && current_user.approved? %>
 <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
   <div class="mdl-card__title">
     <h2 class="mdl-card__title-text">Agent Information</h2>
@@ -47,3 +48,11 @@
     </div>
   </div>
 </div>
+<% else %>
+<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col">
+  <div class="mdl-card__supporting-text" style="margin: auto">
+    You must be approved by an Administrator to access this page. Please contact
+    us at (800)633-6508 or at <%= mail_to 'moreinfo@farhc.com' %> to request approval.
+  </div>
+</div>
+<% end %>

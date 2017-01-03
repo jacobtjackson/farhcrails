@@ -68,10 +68,15 @@
                               Signed in as: <strong><%= current_user.name %></strong>
                               <%= link_to('Control Panel', admin_index_path, class: "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect") %>
                               <%= link_to('Logout', destroy_user_session_path, :method => :delete, class: "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect") %>
-                            <% elsif current_user %>
+                            <% elsif current_user && current_user.approved? %>
                               Signed in as: <strong><%= current_user.name %></strong>
                               <%= link_to('Agent Information', users_index_path, class: "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect") %>
                               <%= link_to('Logout', destroy_user_session_path, :method => :delete, class: "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect") %>
+                            <% elsif current_user %>
+                              Signed in as: <strong><%= current_user.name %></strong>
+                              <%= link_to('Logout', destroy_user_session_path, :method => :delete, class: "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect") %><br /><br />
+                              You must be approved by an admin to access the Agent Tools. Contact us at (800)633-6508 to request approval.
+
                             <% else %>
                             <%= render partial: "devise/sessions/sign_in" %>
                             <% end %>
