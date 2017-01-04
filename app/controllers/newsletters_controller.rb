@@ -1,4 +1,5 @@
 class NewslettersController < ApplicationController
+  load_and_authorize_resource
   def index
     @newsletters = Newsletter.all
     @message = Message.new

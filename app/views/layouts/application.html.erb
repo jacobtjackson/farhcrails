@@ -58,7 +58,7 @@
                     <%= link_to "Preferred Carriers", home_carriers_path, :class => "mdl-navigation__link" %>
                     <%= link_to "Preferred Associations", home_associations_path, :class => "mdl-navigation__link" %>
                     <%= link_to "Lets Talk", home_contact_path, :class => "mdl-navigation__link" %>
-                    <a id="login-button" class="mdl-navigation__link">Agent Login
+                    <a id="login-button" class="mdl-navigation__link"> <%= current_user ? "Agent Logout" : "Agent Login" %>
                     </a>
                     <div class="animated-dialog-content">
                         <div class="animated-dialog-close">&times;</div>

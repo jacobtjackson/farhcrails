@@ -20,4 +20,9 @@ class ApplicationController < ActionController::Base
   def set_message
     @message = Message.new
   end
+
+  rescue_from CanCan::AccessDenied do |exception|
+    flash[:error] = "You are not authorized to access that page."
+    redirect_to root_url
+  end
 end

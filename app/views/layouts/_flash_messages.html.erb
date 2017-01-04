@@ -1,0 +1,9 @@
+<span id="messages">
+  <% flash.each do |key, value| %>
+  <div class="row">
+    <div class="small-12 column">
+      <%= content_tag :div, value, class: "flash-message callout #{key}" %>
+    </div>
+  </div>
+  <% end %>
+</span>

@@ -1,4 +1,5 @@
 class NewsfeedsController < ApplicationController
+  load_and_authorize_resource
   def index
     @newsfeeds = Newsfeed.all
   end
@@ -39,7 +40,7 @@ class NewsfeedsController < ApplicationController
     respond_to do |format|
       format.html { redirect_to admin_index_path }
       format.js
-    end    
+    end
   end
 
   private

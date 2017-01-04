@@ -1,4 +1,5 @@
 class TMaterialsController < ApplicationController
+  load_and_authorize_resource
   def index
     @trainings = TMaterial.all
     @message = Message.new

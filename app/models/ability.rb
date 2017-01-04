@@ -1,7 +1,7 @@
 class Ability
   include CanCan::Ability
 
-  def initialize(user)
+  def initialize(user, session = nil)
     user ||= User.new
     if user.admin?
       can :manage, :all
@@ -11,5 +11,6 @@ class Ability
       can :read, Newsletter
       can :read, TMaterial
       can [:update], User, id: user.id
+    end
   end
 end
