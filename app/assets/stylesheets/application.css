@@ -10,17 +10,9 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
+ *= require_tree .
  *= require_self
- *= require contact
- *= require home
- *= require normalize
  *= require responsiveslides
  *= require normalize
  *= require jquery.animated.dialog.min
- *= require about
- *= require agents
- *= require contact
- *= require products
- *= require admin
- *= require users
  */

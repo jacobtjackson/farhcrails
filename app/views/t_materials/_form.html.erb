@@ -1,4 +1,4 @@
-<%= form_for @training do |f| %>
+<%= form_for @training, html: {multipart: true} do |f| %>
   <div>
     <%= f.text_field :name, placeholder: "Video Name", :class => "mdl-textfield__input" %>
   </div>
@@ -8,5 +8,5 @@
   <div>
     <%= f.text_area :body, placeholder: "Description/Body", :class => "mdl-textfield__input" %>
   </div>
-  <div><%= f.submit "Submit" %></p>
+  <div><%= f.submit %></p>
 <% end %>

@@ -16,8 +16,7 @@ class TMaterialsController < ApplicationController
   end
 
   def create
-    @training = TMaterial.new(training_params)
-
+    @training = TMaterial.create(resource_params)
     if @training.save
       flash[:notice] = "The training video was saved successfully."
       redirect_to admin_index_path
@@ -34,7 +33,7 @@ class TMaterialsController < ApplicationController
 
   def update
     @training = TMaterial.find(params[:id])
-    @training.update_attributes(training_params)
+    @training.update_attributes(resource_params)
 
     if @training.save
       flash[:notice] = "The training video was saved successfully."
@@ -59,7 +58,7 @@ class TMaterialsController < ApplicationController
 
   private
 
-  def training_params
+  def resource_params
     params.require(:t_material).permit(:name, :url, :body)
   end
 end

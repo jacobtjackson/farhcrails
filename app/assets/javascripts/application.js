@@ -12,8 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require agents
-//= require landing
 //= require jquery.animated.dialog.min
 //= require responsiveslides.min
 //= require_tree .
