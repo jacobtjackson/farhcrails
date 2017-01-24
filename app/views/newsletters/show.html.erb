@@ -3,7 +3,7 @@
           <h3 class="mdl-card__title-text"><%= @newsletter.name %></h3>
         </div>
         <div class="mdl-card mdl-shadow-2dp mdl-cell mdl-cell--12-col">
-          <%= image_tag(@newsletter.newsletter_url) %>
+          <%= link_to "View", @newsletter.newsletter_url, target: "_blank" %>
         </div>
         <% if current_user.admin? %>
           <div class="mdl-card mdl-shadow-2dp mdl-cell mdl-cell--12-col">

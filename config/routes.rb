@@ -4,6 +4,9 @@ Rails.application.routes.draw do
   resources :newsletters
   resources :t_materials
   resources :newsfeeds
+  resources :categories
+  resources :refmaterials
+  resources :refvideos
 
   put 'approve_admin', to: "admin#approve", as: :approve_admin
 

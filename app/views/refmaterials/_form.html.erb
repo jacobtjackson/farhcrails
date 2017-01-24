@@ -1,0 +1,14 @@
+<%= form_for @refmaterial, html: {multipart: true} do |f| %>
+  <div>
+    <%= f.label :name %><br />
+    <%= f.text_field :name, :class => "mdl-textfield__input" %>
+  </div>
+  <div>
+    <%= f.file_field :file %>
+  </div>
+  <div>
+    <%= f.label :category, "Assign To Category" %>
+    <%= f.collection_select(:category_id, Category.all, :id, :name) %>
+  </div>
+  <div><%= f.submit %></div>
+<% end %>

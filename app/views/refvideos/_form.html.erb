@@ -1,0 +1,17 @@
+<%= form_for @refvideo, html: {multipart: true} do |f| %>
+  <div>
+    <%= f.text_field :name, placeholder: "Video Name", :class => "mdl-textfield__input" %>
+  </div>
+  <div>
+    <%= f.url_field :url, placeholder: "Video URL", :class => "mdl-textfield__input" %>
+  </div>
+  <div>
+    <%= f.label :category, "Assign To Category" %>
+    <%= f.collection_select(:category_id, Category.all, :id, :name) %>
+  </div>
+  <div>
+    <%= f.text_area :body, placeholder: "Description/Body", :class => "mdl-textfield__input" %>
+  </div>
+
+  <div><%= f.submit %></p>
+<% end %>

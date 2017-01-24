@@ -10,7 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160830203752) do
+ActiveRecord::Schema.define(version: 20170124035033) do
+
+  create_table "categories", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string   "name"
+  end
 
   create_table "messages", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -28,6 +34,24 @@ ActiveRecord::Schema.define(version: 20160830203752) do
     t.datetime "updated_at", null: false
     t.string   "name"
     t.string   "newsletter"
+  end
+
+  create_table "refmaterials", force: :cascade do |t|
+    t.string   "file"
+    t.string   "name"
+    t.string   "body"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.integer  "category_id"
+  end
+
+  create_table "refvideos", force: :cascade do |t|
+    t.string   "name"
+    t.string   "url"
+    t.string   "body"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.integer  "category_id"
   end
 
   create_table "t_materials", force: :cascade do |t|
