@@ -10,7 +10,7 @@ class Ability
       can :read, Newsfeed
       can :read, Newsletter
       can :read, TMaterial
-      can [:update], User, id: user.id
+      can [:update, :index], User, id: user.id
     end
   end
 end

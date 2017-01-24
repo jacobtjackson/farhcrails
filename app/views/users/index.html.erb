@@ -43,7 +43,7 @@
     <div class="newsletter-container">
       <ul class="mdl-list">
         <% @newsletters.each do |n| %>
-          <li class="newsletter-item mdl-list__item"><%= n.timestamp %><%= link_to n.name, n %></li>
+          <li class="newsletter-item mdl-list__item"><%= n.created_at.strftime("%b %d, %Y") %><%= link_to n.name, n.newsletter_url, target: "_blank" %></li>
         <% end %>
       </ul>
     </div>

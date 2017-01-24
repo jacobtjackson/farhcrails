@@ -17,9 +17,11 @@
    </fieldset>
 
    <fieldset>
+     <% if Rails.env.production? %>
      <div class="field">
        <%= recaptcha_tags %>
      </div>
+     <% end %>
      <div class="field">
        <%= message_form.submit "Send", class: 'mdl-button mdl-js-button mdl-button--raised' %>
      </div>
