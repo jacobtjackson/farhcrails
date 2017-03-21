@@ -25,8 +25,11 @@
     </div>
     <% end %>
   </div>
-  <div class="new-ref">
-    <%= link_to "New File", new_refmaterial_path, class: "small-button mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" %></li>
-    <%= link_to "New Video", new_refvideo_path, class: "small-button mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" %></li>
-  <div>
+  <% if current_user.admin? %>
+    <div class="new-ref">
+      <%= link_to "New File", new_refmaterial_path, class: "small-button mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" %>
+      <%= link_to "New Video", new_refvideo_path, class: "small-button mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" %>
+      <%= link_to "New Category", new_category_path, class: "small-button mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" %>
+    <div>
+  <% end %>
 </div>
