@@ -11,6 +11,7 @@ class Ability
       can :read, Newsletter
       can :read, TMaterial
       can [:update, :index], User, id: user.id
+      can :index, Category
     end
   end
 end
