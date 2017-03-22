@@ -3,33 +3,45 @@
     <h2 class="mdl-card__title-text">Reference Materials</h2>
   </div>
   <div class="mdl-cell mdl-cell--12-col mdl-grid">
-    <% @categories.each do |cat| %>
-    <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--6-col">
-      <div class="mdl-card__title">
-        <h3><%= cat.name %></h3>
+    <% if @categories.present? %>
+      <% @categories.each do |cat| %>
+      <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--6-col">
+        <div class="mdl-card__title">
+          <h3><%= cat.name %></h3>
+        </div>
+        <div class="link-container">
+          <h5>Files</h5>
+          <ul class="files">
+            <% cat.refmaterials.each do |mat| %>
+              <li><%= link_to mat.name, mat.file_url, target: "_blank" %></li>
+            <% end %>
+          </ul>
+          <h5>Videos</h5>
+          <ul class="videos">
+            <% cat.refvideos.each do |vid| %>
+              <li><%= link_to vid.name, refvideo_path(vid), target: "_blank" %></li>
+            <% end %>
+          </ul>
+        </div>
       </div>
-      <div class="link-container">
-        <h5>Files</h5>
-        <ul class="files">
-          <% cat.refmaterials.each do |mat| %>
-            <li><%= link_to mat.name, mat.file_url, target: "_blank" %></li>
-          <% end %>
-        </ul>
-        <h5>Videos</h5>
-        <ul class="videos">
-          <% cat.refvideos.each do |vid| %>
-            <li><%= link_to vid.name, refvideo_path(vid), target: "_blank" %></li>
-          <% end %>
-        </ul>
-      </div>
-    </div>
+      <% end %>
+    <% else %>
+      No Reference Material Categories have been set up. <%= "Please click on New Category below in order to set up your first category." if current_user.admin? %>
     <% end %>
+    <div class="mdl-cell mdl-cell--12-col back-button">
+      <% if current_user.admin? %>
+        <%= link_to "Control Panel", admin_index_path, class: "small-button mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" %>
+      <% elsif current_user && current_user.approved? && !current_user.admin? %>
+        <%= link_to "Agent Information", users_index_path, class: "small-button mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" %>
+      <% end %>
+    </div>
+
   </div>
   <% if current_user.admin? %>
     <div class="new-ref">
       <%= link_to "New File", new_refmaterial_path, class: "small-button mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" %>
       <%= link_to "New Video", new_refvideo_path, class: "small-button mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" %>
       <%= link_to "New Category", new_category_path, class: "small-button mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" %>
-    <div>
+    </div>
   <% end %>
-</div>
+  </div>
