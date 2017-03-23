@@ -13,13 +13,27 @@
           <h5>Files</h5>
           <ul class="files">
             <% cat.refmaterials.each do |mat| %>
-              <li><%= link_to mat.name, mat.file_url, target: "_blank" %></li>
+              <li class="refmaterials-item"><%= link_to mat.name, mat.file_url, target: "_blank" %>
+              <% if current_user.admin? %>
+                <div>
+                  <%= link_to "edit", edit_refmaterial_path(mat.id), class: "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" %>
+                  <%= link_to "delete", refmaterial_path(mat.id), method: :delete, data: {confirm: "Are you sure?"}, class: "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" %>
+                </div>
+              <% end %>
+              </li>
             <% end %>
           </ul>
           <h5>Videos</h5>
           <ul class="videos">
             <% cat.refvideos.each do |vid| %>
-              <li><%= link_to vid.name, refvideo_path(vid), target: "_blank" %></li>
+              <li class="refmaterials-item"><%= link_to vid.name, refvideo_path(vid), target: "_blank" %>
+                <% if current_user.admin? %>
+                  <div>
+                    <%= link_to "edit", edit_refvideo_path(vid.id), class: "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" %>
+                    <%= link_to "delete", refvideo_path(vid.id), method: :delete, data: {confirm: "Are you sure?"}, class: "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" %>
+                  </div>
+                <% end %>
+              </li>
             <% end %>
           </ul>
         </div>

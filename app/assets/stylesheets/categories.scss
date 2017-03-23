@@ -6,3 +6,11 @@
   display: flex;
   justify-content: center;
 }
+
+.refmaterials-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 16px;
+  margin-bottom: 8px;
+}

@@ -26,7 +26,9 @@ class RefmaterialsController < ApplicationController
 
   def update
     @refmaterial = Refmaterial.find params[:id]
-    if @refmaterial.save(refmaterial_params)
+    @refmaterial.assign_attributes(refmaterial_params)
+
+    if @refmaterial.save
       flash[:notice] = "The reference material was updated successfully."
       redirect_to categories_path
     else
