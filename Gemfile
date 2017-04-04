@@ -73,3 +73,7 @@ gem 'mail_form'
 gem 'figaro'
 
 gem 'recaptcha', '~> 3.4', require: "recaptcha/rails"
+
+gem 'aws-sdk', '~> 2'
+
+gem "fog"
