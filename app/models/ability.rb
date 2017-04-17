@@ -12,6 +12,8 @@ class Ability
       can :read, TMaterial
       can [:update, :index], User, id: user.id
       can :index, Category
+      can :read, Refvideo
+      can :read, Refmaterial
     end
   end
 end
