@@ -81,6 +81,32 @@
                   <% end %>
           </div>
         </div>
+        <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+          <h3 class="mdl-card__title">Delete Users</h3>
+          <div class="table-container">
+            <table class="mdl-data-table mdl-js-data-table">
+              <thead>
+                <tr>
+                  <th class="mdl-data-table__cell--non-numeric">Select</th>
+                  <th>Name</th>
+                  <th>Email</th>
+                </tr>
+              </thead>
+              <tbody>
+                <%= form_tag(delete_user_path, method: :put) do %>
+                  <% for user in @users %>
+                  <tr>
+                    <td class="mdl-data-table__cell--non-numeric"><%= check_box_tag "user_id[]", user.id, false %></td>
+                    <td><%= user.name %></td>
+                    <td><%= user.email %></td>
+                  </tr>
+                  <% end %>
+              </tbody>
+            </table>
+                  <%= submit_tag "Permanently Delete", class: 'small-button mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect' %>
+                <% end %>
+        </div>
+      </div>
         <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--6-col">
           <h3 class="mdl-card__title">Newsletters</h3>
           <div class="list-container">

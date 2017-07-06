@@ -35,6 +35,11 @@ class AdminController < ApplicationController
     redirect_to admin_index_path
   end
 
+  def delete_user
+    User.where(id: params[:user_id]).destroy_all
+    redirect_to admin_index_path
+  end
+
   private
 
   def authorize_user
