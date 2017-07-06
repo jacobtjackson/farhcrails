@@ -12,6 +12,8 @@ Rails.application.routes.draw do
 
   put 'unapprove_admin', to: "admin#unapprove", as: :unapprove_admin
 
+  put 'delete_user', to: 'admin#delete_user', as: :delete_user
+
   get 'contact', to: 'messages#new', as: 'contact'
 
   post 'contact', to: 'messages#create'
