@@ -67,7 +67,11 @@
                 </div>
             </div>
             <div class="mdl-cell mdl-cell--4-col">
-              <%= link_to "Download Paperwork", asset_path('ContractingPackage1.pdf'), :target => "_blank", class: "agents-button mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" %>
+              <% if @contract_package.present? %>
+                <%= link_to "Download Paperwork", @contract_package.file_url, :target => "_blank", class: "agents-button mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" %>
+              <% else %>
+                <%= link_to "Download Paperwork", asset_path('ContractingPackage1.pdf'), :target => "_blank", class: "agents-button mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" %>
+              <% end %>
             </div>
         </div>
     </div>

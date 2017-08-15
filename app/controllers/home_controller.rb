@@ -17,6 +17,7 @@ class HomeController < ApplicationController
 
   def agents
     @message = Message.new
+    @contract_package = ContractPackage.last
   end
 
   def contact
