@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   resources :categories
   resources :refmaterials
   resources :refvideos
+  resources :contract_packages
 
   put 'approve_admin', to: "admin#approve", as: :approve_admin
 
