@@ -47,8 +47,9 @@
     </div>
     <div class="mdl-layout__container">
       <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <div class="mdl-layout-icon"></div>
         <header class="mdl-layout__header">
-            <div class="mdl-layout__header-row">
+            <div class="mdl-layout__header-row mdl-layout--large-screen-only">
                 <nav class="mdl-navigation">
                     <%= link_to "Home", home_index_path, :class => "mdl-navigation__link" %>
                     <%= link_to "Who We Are", home_about_path, :class => "mdl-navigation__link" %>
@@ -87,6 +88,45 @@
                 </nav>
             </div>
         </header>
+        <div class="mdl-layout__drawer mdl-layout--small-screen-only">
+          <nav class="mdl-navigation">
+            <%= link_to "Home", home_index_path, :class => "mdl-navigation__link" %>
+            <%= link_to "Who We Are", home_about_path, :class => "mdl-navigation__link" %>
+            <%= link_to "Join Our Team", home_agents_path, :class => "mdl-navigation__link" %>
+            <%= link_to "Life Insurance", home_life_path, :class => "mdl-navigation__link" %>
+            <%= link_to "Medical Insurance", home_medical_path, :class => "mdl-navigation__link" %>
+            <%= link_to "Preferred Carriers", home_carriers_path, :class => "mdl-navigation__link" %>
+            <%= link_to "Preferred Associations", home_associations_path, :class => "mdl-navigation__link" %>
+            <%= link_to "Lets Talk", home_contact_path, :class => "mdl-navigation__link" %>
+            <a id="login-button" class="mdl-navigation__link"> <%= current_user ? "Agent Logout" : "Agent Login" %>
+            </a>
+            <div class="animated-dialog-content">
+                <div class="animated-dialog-close">&times;</div>
+                <div id="firebase-auth-container">
+                  <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+                    <% if current_user && current_user.admin? %>
+                      Signed in as: <strong><%= current_user.name %></strong>
+                      <%= link_to('Control Panel', admin_index_path, class: "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect") %>
+                      <%= link_to('Logout', destroy_user_session_path, :method => :delete, class: "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect") %>
+                    <% elsif current_user && current_user.approved? %>
+                      Signed in as: <strong><%= current_user.name %></strong>
+                      <%= link_to('Agent Information', users_index_path, class: "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect") %>
+                      <%= link_to('Logout', destroy_user_session_path, :method => :delete, class: "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect") %>
+                    <% elsif current_user %>
+                      Signed in as: <strong><%= current_user.name %></strong>
+                      <%= link_to('Logout', destroy_user_session_path, :method => :delete, class: "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect") %><br /><br />
+                      You must be approved by an admin to access the Agent Tools. Contact us at (800)633-6508 to request approval.
+
+                    <% else %>
+                    <%= render partial: "devise/sessions/sign_in" %>
+                    <% end %>
+
+                  </div>
+            </div>
+          </div>
+        </nav>
+          </nav>
+        </div>
         <div class="mdl-layout__content">
           <div class="more-info">
             <button id="info-button" class="button mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" type="button">More Info</button>
